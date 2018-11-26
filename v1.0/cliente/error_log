@@ -1,0 +1,475 @@
+[28-Jan-2016 19:37:31 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[28-Jan-2016 19:37:31 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[28-Jan-2016 19:37:31 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:31 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:43 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[28-Jan-2016 19:37:43 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[28-Jan-2016 19:37:43 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[28-Jan-2016 19:37:43 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:53:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[14-Mar-2016 13:53:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[14-Mar-2016 13:53:28 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[14-Mar-2016 13:53:28 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[14-Mar-2016 13:54:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/conexion.php on line 3
+[14-Mar-2016 13:54:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[25-Apr-2016 16:11:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[25-Apr-2016 16:11:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[25-Apr-2016 16:11:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[25-Apr-2016 16:11:04 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 15:26:45 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[29-Jul-2016 15:26:45 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[29-Jul-2016 15:26:45 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/admin/class/class.php on line 9
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 152
+[29-Jul-2016 15:26:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/admin/cliente/registro_cliente.php on line 153
+[29-Jul-2016 16:40:29 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 9
+[29-Jul-2016 16:40:29 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 9
+[29-Jul-2016 16:40:29 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 9
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[29-Jul-2016 16:40:29 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:33 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[01-Aug-2016 19:38:35 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[01-Aug-2016 19:38:35 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[01-Aug-2016 19:38:37 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:37 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:37 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:37 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:37 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:37 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:37 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:38 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:38 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:39 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:40 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:40 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:40 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:40 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:40 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:40 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:40 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:40 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:40 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:40 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:41 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[01-Aug-2016 19:38:41 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[01-Aug-2016 19:38:41 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:38:41 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:51:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[01-Aug-2016 19:51:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[01-Aug-2016 19:51:44 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[01-Aug-2016 19:51:44 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:30 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[20-Sep-2016 15:58:30 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[20-Sep-2016 15:58:30 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[20-Sep-2016 15:58:30 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[20-Sep-2016 15:58:40 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[20-Sep-2016 15:58:40 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[20-Sep-2016 16:31:05 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[20-Sep-2016 16:31:05 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 13:57:59 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 13:57:59 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 13:57:59 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 13:57:59 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 13:58:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 14:00:47 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 14:00:47 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 14:00:47 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:00:47 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:00:52 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 14:02:20 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 14:02:20 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 14:02:20 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[02-Oct-2016 14:02:20 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:17 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[03-Oct-2016 20:21:17 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[03-Oct-2016 20:21:17 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[03-Oct-2016 20:21:17 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[03-Oct-2016 20:21:34 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[03-Oct-2016 20:21:34 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[04-Oct-2016 00:11:23 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[04-Oct-2016 00:11:23 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[04-Oct-2016 00:11:23 UTC] PHP Notice:  Undefined variable: nomUser in /home/caracasw/public_html/admin/include/cabecera_interno.php on line 2
+[04-Oct-2016 01:29:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[04-Oct-2016 01:29:09 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[04-Oct-2016 01:29:09 UTC] PHP Notice:  Undefined variable: nomUser in /home/caracasw/public_html/admin/include/cabecera_interno.php on line 2
+[17-Oct-2016 11:09:35 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[17-Oct-2016 11:09:35 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[17-Oct-2016 11:09:35 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[17-Oct-2016 11:09:35 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[17-Oct-2016 11:10:04 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[17-Oct-2016 11:29:17 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[17-Oct-2016 11:29:17 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[17-Oct-2016 11:29:20 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[24-Oct-2016 09:17:33 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[24-Oct-2016 09:17:33 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[24-Oct-2016 09:17:33 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:33 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:39 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[24-Oct-2016 09:17:39 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[24-Oct-2016 09:17:45 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[24-Oct-2016 09:17:45 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[24-Oct-2016 09:17:45 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[24-Oct-2016 09:17:45 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 17:59:15 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 17:59:15 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 17:59:15 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 17:59:18 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 18:02:07 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 18:02:07 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 18:02:11 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 18:02:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 18:02:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 18:02:27 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 150
+[07-Nov-2016 18:02:27 UTC] PHP Notice:  Undefined index: codi_clie in /home/caracasw/public_html/admin/cliente/registro_cliente.php on line 151
+[07-Nov-2016 18:02:33 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
+[07-Nov-2016 18:02:33 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/caracasw/public_html/admin/class/class.php on line 21
