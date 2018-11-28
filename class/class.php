@@ -24,7 +24,7 @@ class Conectar
         //nos conectamos a la BD
         mysql_select_db('caracasw_saj');
 
-        
+
         return $con;
         */
     }
@@ -42,7 +42,7 @@ class Cliente
 
     }
 
-    public function AddCategoriaClientes($nombre, $puntos, $nombre_img) 
+    public function AddCategoriaClientes($nombre, $puntos, $nombre_img)
     {
         $id = com_create_guid();
         $sql = "insert into tb_categorias_clientes values($id,'$nombre','$puntos','$nombre_img')";
@@ -102,7 +102,7 @@ class Cliente
         $sql = "insert into tb_expediente values (null,'$titulo','$descripcion','$codi_clie')";
         //en este caso  como el codi_clie de la BD es PRIMARY
         $reg = mysql_query($sql, Conectar::conecta());
-        
+
         $id = mysql_insert_id();
         $this->codi_clie = $codi_clie;
         echo "<script type='text/javascript'>
@@ -110,23 +110,23 @@ class Cliente
 			window.location='expediente.php?id=$id&codi_clie=$codi_clie';
 			</script>";
     }
-    
-    
-    
-    
+
+
+
+
     public function updateExpediente($id, $titulo, $descripcion,$codi_clie)
-    {   
+    {
         $sql = "UPDATE tb_expediente set titulo = '$titulo', descripcion = '$descripcion' WHERE codi_exp = '$id'";
         //en este caso  como el codi_clie de la BD es PRIMARY
         $reg = mysql_query($sql, Conectar::conecta());
-        
+
         echo "<script type='text/javascript'>
 			alert('El registro ha sido añadido satisfactoriamente');
             //document.getElementById('mensaje').innerHTML += '<br>El registro ha sido añadido satisfactoriamente';
 			window.location='expediente.php?id=$id&codi_clie=$codi_clie';
 			</script>";
     }
-    
+
     //Editamos el Cliente que deseamos actualizar
     public function EditarCliente($codigo, $cedula, $nom, $fecha, $dire, $tele, $telepc)
     {
@@ -232,14 +232,14 @@ class Cliente
         }
 
         return $this->datos;
-    }  
+    }
 
     /////
     //Registramos los Producto
-    public function AnadirProducto($producto, $categoria, $marca, $cantidad, $costo, $precio, $minimo,$puntaje,$fecha)
+    public function AnadirProducto($producto, $categoria, $marca, $cantidad, $costo, $precio, $minimo,$fecha)
     {
 
-        $sql = "insert into tb_productos values (null,'$producto','$categoria','$marca','$cantidad','$costo','$precio','$minimo','$puntaje',$fecha)";
+        $sql = "insert into tb_productos values (null,'$producto','$categoria','$marca','$cantidad','$costo','$precio','$minimo',$fecha)";
         //en este caso  como el codi_clie de la BD es PRIMARY
         $reg = mysql_query($sql, Conectar::conecta());
         echo "<script type='text/javascript'>
@@ -280,7 +280,7 @@ class Cliente
 
         return $this->datos;
     }
-    /////  
+    /////
     //Muestra la tabla libro de Ventas
     public function libroVentas()
     {
@@ -294,8 +294,8 @@ class Cliente
 
         return $this->datos;
     }
-    
-    
+
+
     //Paginado Utilizado primeramente para los CLiente
     public function PaginadolibroVentas($inicio)
     {
@@ -342,7 +342,7 @@ class Facturacion
 
     public function consultaFacturaGeneral()
     {
-        $sql = "select * from tb_regi_cli as p 
+        $sql = "select * from tb_regi_cli as p
 	join tb_factura as s on s.codi_clie=p.codi_clie
 	join tb_detalle_ventas as t
 	on s.codi_factu = t.codi_factu and t.codi_clie=p.codi_clie";
@@ -361,7 +361,7 @@ class Facturacion
     public function PaginadoFactura($inicio)
     {
 
-        $sql = "select * from tb_regi_cli as p 
+        $sql = "select * from tb_regi_cli as p
 		join tb_factura as s on s.codi_clie=p.codi_clie
 		join tb_detalle_ventas as t
 		on s.codi_factu = t.codi_factu and t.codi_clie=p.codi_clie
@@ -384,13 +384,13 @@ class Facturacion
 Class Productos
 {
 
-   //protected $id; 
+   //protected $id;
    private $datos;
-    
+
     public function __construct()
     {
         $this->datos=array();
-        
+
         }
 
 
@@ -401,7 +401,7 @@ Class Productos
         while($reg = mysql_fetch_assoc($res))
         {
             $this->datos[] = $reg;
-            
+
             }
             return $this->datos;
     }
@@ -413,7 +413,7 @@ Class Productos
         while($reg = mysql_fetch_assoc($res))
         {
             $this->datos[] = $reg;
-            
+
             }
             return $this->datos;
     }
@@ -440,7 +440,7 @@ Class Productos
         while($reg = mysql_fetch_assoc($res))
         {
             $this->datos[] = $reg;
-            
+
             }
             return $this->datos;
     }

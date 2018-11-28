@@ -1,10 +1,10 @@
-<?php 
+<?php
 include("../start.php");
 	  include("../class/class.php");
 	  $conecta = new Conectar();
 	  $con =  $conecta->conecta();
 	  $add = new Cliente();
-	  
+
 	  if(isset($_POST["anadir"]) and $_POST["anadir"]=="si")
 		{
 		//print_r($_POST);
@@ -88,8 +88,8 @@ $atras = 1;
                 <br><br><br><br>
                 <div class="row placeholders">
                      <form name="form_producto" id="form_producto" action="add_producto.php" method="post">
-                       
-                               
+
+
                        <div class="row placeholders">
                              <div class="col-md-4">
                                <label>Descripción: </label>
@@ -101,59 +101,59 @@ $atras = 1;
                              </div>
                              <div class="col-md-3">
                                <label>Categoria: </label>
-                               <select name="categoria" id="categoria" class="form-control" > 
+                               <select name="categoria" id="categoria" class="form-control" >
                                   <?php
-                                      //Consulta la BD    
+                                      //Consulta la BD
                                       $respuesta=mysql_query("select * from tb_categorias_productos order by categoria");
-                                      //Se realiza la condicion para saber el valor de la 
+                                      //Se realiza la condicion para saber el valor de la
                                       //variable $valor
                                       if(($valor ==0))
                                       {
                                         echo '<option value="0" >Seleccione</option>';
                                         while($select =mysql_fetch_array($respuesta)){
                                           echo '
-                                            <option value="'.$select["id_categoria"].'"> 
+                                            <option value="'.$select["id_categoria"].'">
                                             '.$select["categoria"].'</option> ';
                                             }
                                       }
                                       else{
                                           echo '<option  value="'.$row["id_categoria"].'">'.$row["categoria"].'</option> ';
                                             while($select =mysql_fetch_array($respuesta)){
-                                            
+
                                             echo '<option value="'.$select["id_categoria"].'">'.$select["categoria"].'</option>';
                                             }
                                             }
-                                        
-                                        
+
+
                                         ?>
                                 </select>
                              </div>
                              <div class="col-md-3">
                                <label>Marca: </label>
-                               <select name="marca" id="marca" class="form-control" > 
+                               <select name="marca" id="marca" class="form-control" >
                                   <?php
-                                      //Consulta la BD    
+                                      //Consulta la BD
                                       $respuesta=mysql_query("select * from tb_marcas order by descripcion_marca");
-                                      //Se realiza la condicion para saber el valor de la 
+                                      //Se realiza la condicion para saber el valor de la
                                       //variable $valor
                                       if(($valor ==0))
                                       {
                                         echo '<option value="0" >Seleccione</option>';
                                         while($select =mysql_fetch_array($respuesta)){
                                           echo '
-                                            <option value="'.$select["id_marca"].'"> 
+                                            <option value="'.$select["id_marca"].'">
                                             '.$select["descripcion_marca"].'</option> ';
                                             }
                                       }
                                       else{
                                           echo '<option  value="'.$row["id_marca"].'">'.$row["descripcion_marca"].'</option> ';
                                             while($select =mysql_fetch_array($respuesta)){
-                                            
+
                                             echo '<option value="'.$select["id_marca"].'">'.$select["descripcion_marca"].'</option>';
                                             }
                                             }
-                                        
-                                        
+
+
                                         ?>
                                 </select>
                              </div>
@@ -179,9 +179,9 @@ $atras = 1;
                                 <label>Fecha: </label>
                                 <input type="text" name="datepicker" id="datepicker" maxlength="10" size="6" class="demo form-control"/>
                              </div>
-                       </div> 
-                       
-                       
+                       </div>
+
+
                        <br />
                        <div class="row placeholders">
                              <div class="col-md-3 col-md-offset-3">
@@ -200,10 +200,10 @@ $atras = 1;
     </div>
 
 
-	
-                
-        
 
-               
+
+
+
+
 </body>
 </html>
