@@ -29,6 +29,9 @@ for($i=1; $i<10; $i++)
         //echo 'Descripcion'.$descripcion.'  cantidad'.$cantidad.'  Precio'.$precio.'  Cantidad'.$cantidad.'  id_producto: '.$producto ."<br>";  
         mysql_query("update tb_productos set cantidad_producto = cantidad_producto - '".$cantidad."' where id_producto = '".$producto."'");
 
+
+       // $consultar = mysql_query("select * from tb_puntaje_cliente where ");
+
      }
     
   }

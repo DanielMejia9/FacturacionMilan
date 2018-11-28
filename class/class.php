@@ -236,10 +236,10 @@ class Cliente
 
     /////
     //Registramos los Producto
-    public function AnadirProducto($producto, $categoria, $marca, $cantidad, $costo, $precio, $minimo,$fecha)
+    public function AnadirProducto($producto, $categoria, $marca, $cantidad, $costo, $precio, $minimo,$puntaje,$fecha)
     {
 
-        $sql = "insert into tb_productos values (null,'$producto','$categoria','$marca','$cantidad','$costo','$precio','$minimo',$fecha)";
+        $sql = "insert into tb_productos values (null,'$producto','$categoria','$marca','$cantidad','$costo','$precio','$minimo','$puntaje',$fecha)";
         //en este caso  como el codi_clie de la BD es PRIMARY
         $reg = mysql_query($sql, Conectar::conecta());
         echo "<script type='text/javascript'>

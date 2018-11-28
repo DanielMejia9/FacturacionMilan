@@ -10,7 +10,7 @@ include("../start.php");
 		//print_r($_POST);
 		//print_r($_POST["codi_clie"]);
     $datepicker      = date('Y-m-d', strtotime($_POST["datepicker"]));
-		$addCliente = $add->AnadirProducto($_POST["producto"],$_POST["categoria"],$_POST["marca"],$_POST["cantidad"],$_POST["costo"],$_POST["precio"],$_POST["minimo"],$datepicker);
+		$addCliente = $add->AnadirProducto($_POST["producto"],$_POST["categoria"],$_POST["marca"],$_POST["cantidad"],$_POST["costo"],$_POST["precio"],$_POST["minimo"],$_POST["puntaje"],$datepicker);
 			exit;
 		}
 	  include("../controle/vSession.php");
@@ -95,7 +95,11 @@ $atras = 1;
                                <label>Descripción: </label>
                                <input type="text" name="producto" id="producto"  maxlength="250" size="50" class="form-control" />
                              </div>
-                             <div class="col-md-4">
+                             <div class="col-md-2">
+                               <label>Puntaje: </label>
+                               <input type="text" name="puntaje" id="puntaje"  maxlength="250" size="50" class="form-control" />
+                             </div>
+                             <div class="col-md-3">
                                <label>Categoria: </label>
                                <select name="categoria" id="categoria" class="form-control" > 
                                   <?php
@@ -124,7 +128,7 @@ $atras = 1;
                                         ?>
                                 </select>
                              </div>
-                             <div class="col-md-4">
+                             <div class="col-md-3">
                                <label>Marca: </label>
                                <select name="marca" id="marca" class="form-control" > 
                                   <?php

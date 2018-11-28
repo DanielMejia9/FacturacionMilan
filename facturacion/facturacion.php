@@ -163,54 +163,24 @@ $atras = 1;
                                 <input type="hidden" name="nombrecliente" id="nombrecliente"  value="<?php echo $row["nomb_clie"] ?>" />
                                 
                             </div>
-                            <div class="col-md-2">
-                                Rif: <input type="text" name="rifEmp" value="<?php echo $row["rif_clie"] ?> " id="rifEmp" maxlength="12" size="15" class="form-control" />
-                            </div>
-                            <div class="col-md-1">
-                                 NIT: <input type="text" name="nitEmp" value="<?php echo $row["nit_clie"] ?>" id="nitEmp" maxlength="15" size="15" class="form-control" />
-                            </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                 Direcci&oacute;n: <input type="text" name="dirEmp" value="<?php echo $row["dire_clie"] ?>" id="dirEmp" maxlength="200" size="56" class="form-control" />
                             </div>
-                              
-                        </div> 
-                        <div class="row">
-                            
-                            <div class="col-md-2">
-                                Pais: <input type="text" name="paisEmp"  value="<?php echo $row["pais_clie"] ?>" id="paisEmp" maxlength="12" size="15" class="form-control" />
-                            </div>
-                            <div class="col-md-2">
-                                Ciudad: <input type="text" name="ciuEmp" value="<?php echo $row["ciud_clie"] ?>" id="ciuEmp" maxlength="50" size="16" class="form-control" />
-                            </div> 
-                            <div class="col-md-2">
-                                Estado: <input type="text" name="estEmp"  value="<?php echo $row["esta_clie"] ?>" id="estEmp" maxlength="12" size="19" class="form-control" />
-                            </div>
-                            <div class="col-md-2">
+                             <div class="col-md-2">
                                 Telefonos*: <input type="text" name="telEmpr"   value="<?php echo $row["tele_clie"] ?>"id="telEmpr" maxlength="11" size="15" class="form-control" />
                             </div>
                             <div class="col-md-2">
                                 Telefonos(opcional): <input type="text" name="telEmpropc"  value="<?php echo $row["tele_clie_opci"] ?>" id="telEmpropc" maxlength="11" size="15" class="form-control"  />
                             </div>
                             <div class="col-md-1">
-                                Contr:<input type="text" name="contribuyente" id="contribuyente" value="<?php echo $row["cont_espe_clie"] ?>" maxlength="2" size="4" class="form-control" />
-                            </div>
-                            <div class="col-md-1">
                             IVA: <select name="selectiva" id="selectiva" class="form-control" >
                                             <option value="0">NO</option>
                                             <option value="1">SI</option>
-                               			  </select>
+                                          </select>
                             </div>
-                        </div>
-                        <div class="row">
                             
-                            
-                            
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                Descrpcion de la Factura: <input type="text" name="descripcion" id="descripcion" size="80" class="form-control"  />
-                            </div>
-                        </div>  
+                              
+                        </div> 
                         <br />
                         <table name="factura" id="factura" class="descFact table table-hover table-bordered" border="0"   align="center" rules="all">
                              <tr height="20px" style="background:rgba(51, 51, 51, 0.82); color:#FFF; font-weight:bold;">	
@@ -309,13 +279,7 @@ $atras = 1;
         		?>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-2 col-md-offset-2">
-                            <a href="#" target="_blank"  onclick="guardarFactura();" class="btn btn-primary">Guardar PDF</a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#" target="_blank" onclick="imprimirFactura();"  class="btn btn-primary">Imprimir</a>
-                        </div>
-                        <div class="col-md-2">
+                        <div class="col-md-12">
                             <a href="#" onclick="validarFactura();"  class="btn btn-primary">Registrar</a>
                         </div>    
                     </div> 
