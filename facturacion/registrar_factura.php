@@ -10,7 +10,7 @@ $conectar = $conexion->conecta();
 
 
 
-    
+
 if(isset($_POST["registrarFact"]) && $_POST["registrarFact"] =='1')
 {
 for($i=1; $i<10; $i++)
@@ -20,20 +20,30 @@ for($i=1; $i<10; $i++)
      $precio      = $_POST['txtPrec'.$i];
      $numero_factura	 = $_POST["numero_factura"];
      $producto     = $_POST["producto".$i];
-     
-     //echo $descripcion.$cantidad.$precio."<br>";  
 
-     if($cantidad!=''&& $descripcion!='') 
+     //echo $descripcion.$cantidad.$precio."<br>";
+
+     if($cantidad!=''&& $descripcion!='')
      {
         mysql_query("insert into tb_detalle_factura (codi_factu,cantidad,descripcion, id_producto, precio)values('$numero_factura','$cantidad','$descripcion','$producto','$precio')");
-        //echo 'Descripcion'.$descripcion.'  cantidad'.$cantidad.'  Precio'.$precio.'  Cantidad'.$cantidad.'  id_producto: '.$producto ."<br>";  
+        //echo 'Descripcion'.$descripcion.'  cantidad'.$cantidad.'  Precio'.$precio.'  Cantidad'.$cantidad.'  id_producto: '.$producto ."<br>";
         mysql_query("update tb_productos set cantidad_producto = cantidad_producto - '".$cantidad."' where id_producto = '".$producto."'");
 
 
-       // $consultar = mysql_query("select * from tb_puntaje_cliente where ");
+       $consultar = mysql_query("select count(*) from tb_puntaje_cliente where codi_cliente = '".$_POST["codigo-cliente"]."' ");
+       $puntaje   = mysql_query("select puntaje from tb_productos where id_producto =  = '".$producto."'");
+       if ($consultar =='1')
+       {
+         mysql_query("update  tb_puntaje_cliente set puntaje_cliente = puntaje_cliente + '".$puntaje."'  where codi_cliente = '".$_POST["codigo-cliente"]."'");
+
+       }
+       else
+       {
+         mysql_query("insert into  tb_puntaje_cliente (codi_cliente,puntaje_cliente) values ('".$_POST["codigo-cliente"]."', $puntaje );
+       }
 
      }
-    
+
   }
 
 $numero_factura	 = $_POST["numero_factura"];
@@ -52,7 +62,7 @@ $monto_total = str_replace(',', '.', $monto_total);
 
 
 $regFactura = $Facturacion->registraFactura($numero_control,$datepicker,$codi_clie,$monto_neto,$monto_iva,$monto_total);
-    
+
 echo "<script type='text/javascript'>
 			alert('El registro satisfactorio');
 			window.location='facturacion.php?valor=$codi_clie';
@@ -139,7 +149,7 @@ $genTotal = $_POST["genTotal"];
 
 if($telefono2 == 'NA' || $telefono2 =='')
 {
-    $telefono2 == NULL;  
+    $telefono2 == NULL;
 }
 
 $pdf = new FPDF();
@@ -215,10 +225,10 @@ $pdf->Cell(0,15,''.$txtTota10 ,0,1,'C');
 
 
 
-    // Posición: a 1,5 cm del final
+    // Posiciï¿½n: a 1,5 cm del final
     $pdf->SetY(200);
 
-    // Número de página
+    // Nï¿½mero de pï¿½gina
     $pdf->Cell(330,10,'Sub-total: '.$subTotal ,0,1,'C');
 	$pdf->Cell(330,10,'I.V.A. (12%): '.$ivaRes ,0,1,'C');
 	$pdf->Cell(330,10,'Total General: '.$genTotal ,0,1,'C');
