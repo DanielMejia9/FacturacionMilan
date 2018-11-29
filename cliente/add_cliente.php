@@ -37,14 +37,14 @@ $atras = 1;
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="../css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="../jscript/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="../jscript/bootstrap.min.js"></script>
 
 <script  type="application/javascript" src="jscript/funciones.js"></script>
 
@@ -95,7 +95,7 @@ $atras = 1;
             </div>
             <br><br>
             <div class="row placeholders">
-              <form name="form_clie" id="form_clie" action="add_cliente.php" method="post">
+              <form name="form_clie" id="form_clie" action="add_cliente.php" method="post" autocomplete="off">
                 <div class="row placeholders">
                 <div class="col-md-3">
                   <label>Nombre del Cliente: </label>
@@ -160,7 +160,7 @@ $atras = 1;
                   </div>
                   <div class="col-md-6">
                     <label>Contraseña:</label>
-                    <input type="text" name="password"  id="password" maxlength="14" size="10" value="<?= $cadena; ?>" class="form-control"/>
+                    <input type="text" name="password"  id="password" maxlength="14" size="10" value="<?= $cadena; ?>" class="form-control" required/>
                   </div>
                 </div> 
                 <br />

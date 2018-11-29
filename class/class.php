@@ -53,20 +53,29 @@ class Cliente
             </script>";*/
     }
 
-    //Llama a los cliente por el codi_clie para consultalos
+    //Llama a los cliente por el codi_clie
     public function ListarCliente($codiClie)
     {
-
         $sql = "select * FROM tb_regi_cli where	codi_clie = $codiClie";
         $res = mysql_query($sql, Conectar::conecta());
         while ($reg = mysql_fetch_assoc($res))
         {
             $this->datos[] = $reg;
-
         }
         return $this->datos;
     }
 
+    //Consultamos los puntos acumulados del cliente
+    public function ConsultaPuntos($codiClie)
+    {
+        $query = "select * FROM tb_puntaje_cliente WHERE codi_cliente = $codiClie";
+        $result = mysql_query($query, Conectar::conecta());
+        while ($res = mysql_fetch_assoc($result))
+        {
+            $this->row[] = $res;
+        }
+        return $this->row;
+    }
 
     //
     public function listarExpediente($codiClie)
@@ -111,9 +120,6 @@ class Cliente
 			</script>";
     }
 
-
-
-
     public function updateExpediente($id, $titulo, $descripcion,$codi_clie)
     {
         $sql = "UPDATE tb_expediente set titulo = '$titulo', descripcion = '$descripcion' WHERE codi_exp = '$id'";
@@ -128,10 +134,14 @@ class Cliente
     }
 
     //Editamos el Cliente que deseamos actualizar
-    public function EditarCliente($codigo, $cedula, $nom, $fecha, $dire, $tele, $telepc)
+    public function EditarCliente($codigo, $cedula, $nom, $apellido, $fecha, $dire, $tele, $telepc, $puntos)
     {
-        //echo $codigo,$nom,$rif,$nit,$fecha,$dire,$pais,$cuidad,$estado,$tele,$telepc,$cont;
-        $sql = "UPDATE tb_regi_cli set cedula = '$cedula', fech_clie ='$fecha', dire_clie = '$dire', tele_clie = '$tele', tele_clie_opci = '$telepc' WHERE codi_clie = '$codigo'";
+        if ($puntos != NULL) {
+            $udPuntos = "UPDATE tb_puntaje_cliente SET puntaje_cliente = '$puntos' WHERE codi_cliente = '$codigo'";
+            mysql_query($udPuntos, Conectar::conecta());
+        }
+
+        $sql = "UPDATE tb_regi_cli set cedula = '$cedula', nomb_clie = '$nom', ape_clie = '$apellido', fech_clie ='$fecha', dire_clie = '$dire', tele_clie = '$tele', tele_clie_opci = '$telepc' WHERE codi_clie = '$codigo'";
 
         $reg = mysql_query($sql, Conectar::conecta());
         echo "<script type='text/javascript'>
@@ -236,10 +246,9 @@ class Cliente
 
     /////
     //Registramos los Producto
-    public function AnadirProducto($producto, $categoria, $marca, $cantidad, $costo, $precio, $minimo,$fecha)
+    public function AnadirProducto($producto, $categoria, $marca, $cantidad, $costo, $precio, $minimo, $puntaje, $fecha)
     {
-
-        $sql = "insert into tb_productos values (null,'$producto','$categoria','$marca','$cantidad','$costo','$precio','$minimo',$fecha)";
+        $sql = "insert into tb_productos values (null,'$producto','$categoria','$marca','$cantidad','$costo','$precio','$minimo','$puntaje','$fecha')";
         //en este caso  como el codi_clie de la BD es PRIMARY
         $reg = mysql_query($sql, Conectar::conecta());
         echo "<script type='text/javascript'>

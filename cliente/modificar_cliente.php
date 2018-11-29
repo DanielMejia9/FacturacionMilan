@@ -2,6 +2,7 @@
 include("../start.php");
 include("../controle/vSession.php");
 require_once("../class/class.php");
+
 $conecta = new Conectar();
 $con =  $conecta->conecta();
 $clie = new Cliente();
@@ -10,10 +11,11 @@ if(isset($_POST["guardar"]) and $_POST["guardar"]=="si")
 {
 	//print_r($_POST);
 	//print_r($_POST["codi_clie"]);
-	$clie->EditarCliente($_POST["codi_clie"],$_POST["cedula"],$_POST["nom_cliente"],$_POST["datepicker"],$_POST["dirEmp"],$_POST["telEmpr"],$_POST["telEmpropc"]);
+	$clie->EditarCliente($_POST["codi_clie"],$_POST["cedula"],$_POST["nom_cliente"],$_POST["ape_cliente"],$_POST["datepicker"],$_POST["dirEmp"],$_POST["telEmpr"],$_POST["telEmpropc"],$_POST["puntos"]);
 	exit;
 	}
 $mod = $clie->ListarCliente($_GET["codi_clie"]);
+$puntos_a = $clie->ConsultaPuntos($_GET["codi_clie"]);
 
 //Valor para modiicar automicamente el menu lateral
 $atras = 1;
@@ -28,14 +30,14 @@ $atras = 1;
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="../css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="../jscript/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="../jscript/bootstrap.min.js"></script>
 <script  type="application/javascript" src="jscript/funciones.js"></script>
 
 
@@ -85,21 +87,21 @@ $atras = 1;
             </div>
             <br><br>
             <div class="row">
-              <form name="form_clie" id="form_clie" action="modificar_cliente.php" method="post">
+              <form name="form_clie" id="form_clie" action="modificar_cliente.php" method="post" autocomplete="off">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-3">
                     <label>Cédula:</label>
                     <input type="text" name="cedula" id="cedula" value="<?php echo $mod[0]['cedula'] ?>" maxlength="12" size="10" class="form-control"/>
                   </div>
-                  <div class="col-md-4">
+                  <div class="col-md-3">
                     <label>Nombre del Cliente: </label>
                     <input type="text" name="nom_cliente" id="nom_cliente" value="<?php echo $mod[0]['nomb_clie'] ?>" maxlength="250" size="50" class="form-control" />
                   </div>
-                  <!--div class="col-md-3">
-                    <label>NIT: </label>
-                    <input type="text" name="nitEmp" id="nitEmp" value="<?php echo $mod[0]['nit_clie'] ?>" maxlength="15" size="10" class="form-control"/>
-                  </div-->
-                  <div class="col-md-4">
+                  <div class="col-md-3">
+                    <label>Apellido del Cliente: </label>
+                    <input type="text" name="ape_cliente" id="ape_cliente" value="<?php echo $mod[0]['ape_clie'] ?>" maxlength="250" size="50" class="form-control" />
+                  </div>
+                  <div class="col-md-3">
                     <label>Fecha: </label>
                     <input type="text" name="datepicker" value="<?php echo $mod[0]['fech_clie'] ?>" id="datepicker" maxlength="10" size="6" class="demo form-control"/>
                   </div>
@@ -130,6 +132,12 @@ $atras = 1;
                   <div class="col-md-6">
                     <label>Telefonos(opcional):</label>
                     <input type="text" name="telEmpropc" value="<?php echo $mod[0]['tele_clie_opci'] ?>" id="telEmpropc" maxlength="14" size="10" class="form-control"/>
+                  </div>
+                </div> 
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>Puntos acumulados:</label>
+                    <input type="text" name="puntos" value="<?php echo $puntos_a[0]['puntaje_cliente'] ?>" id="puntos" maxlength="14" size="10" class="form-control"/>
                   </div>
                 </div> 
                 <br />

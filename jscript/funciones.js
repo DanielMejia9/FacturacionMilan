@@ -42,10 +42,6 @@ function validarUser(){
 			alert("Debe indicar un número telefónico");
 			form_clie.telEmpr.focus()
 		}
-		else if(document.getElementById("password").value==""){
-			alert("Debe indicar si el cliente es contribuyente");
-			form_clie.password.focus()
-		}
 		else{
 			//document.form_clie.action ="controle/modelo.php"
 			document.form_clie.submit();

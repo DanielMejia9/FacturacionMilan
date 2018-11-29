@@ -13,37 +13,41 @@ $conectar = $conexion->conecta();
 
 if(isset($_POST["registrarFact"]) && $_POST["registrarFact"] =='1')
 {
-for($i=1; $i<10; $i++)
-{
-     $descripcion = $_POST['txtDesc'.$i];
-     $cantidad    = $_POST['txtCant'.$i];
-     $precio      = $_POST['txtPrec'.$i];
-     $numero_factura	 = $_POST["numero_factura"];
-     $producto     = $_POST["producto".$i];
+  $cliente = $_POST['codigo-cliente'];
 
-     //echo $descripcion.$cantidad.$precio."<br>";
+  for($i=1; $i<10; $i++)
+  {
+    $descripcion = $_POST['txtDesc'.$i];
+    $cantidad    = $_POST['txtCant'.$i];
+    $precio      = $_POST['txtPrec'.$i];
+    $numero_factura	 = $_POST["numero_factura"];
+    $producto     = $_POST["producto".$i];
 
-     if($cantidad!=''&& $descripcion!='')
-     {
-        mysql_query("insert into tb_detalle_factura (codi_factu,cantidad,descripcion, id_producto, precio)values('$numero_factura','$cantidad','$descripcion','$producto','$precio')");
-        //echo 'Descripcion'.$descripcion.'  cantidad'.$cantidad.'  Precio'.$precio.'  Cantidad'.$cantidad.'  id_producto: '.$producto ."<br>";
-        mysql_query("update tb_productos set cantidad_producto = cantidad_producto - '".$cantidad."' where id_producto = '".$producto."'");
+    if($cantidad!='' && $descripcion!='')
+    {
+      mysql_query("insert into tb_detalle_factura (codi_factu,cantidad,descripcion, id_producto, precio)values('$numero_factura','$cantidad','$descripcion','$producto','$precio')");
+      
+      mysql_query("update tb_productos set cantidad_producto = cantidad_producto - '".$cantidad."' where id_producto = '".$producto."'");
 
+      //Consultamos si ya el cliente posee puntos
+      $consultar = mysql_query("select * from tb_puntaje_cliente where codi_cliente = $cliente ");
+      while ($row = mysql_fetch_array($consultar)) {
+        $id_producto = $row[0];
+      }
 
-       $consultar = mysql_query("select count(*) from tb_puntaje_cliente where codi_cliente = '".$_POST["codigo-cliente"]."' ");
-       $puntaje   = mysql_query("select puntaje from tb_productos where id_producto =  = '".$producto."'");
-       if ($consultar =='1')
-       {
-         mysql_query("update  tb_puntaje_cliente set puntaje_cliente = puntaje_cliente + '".$puntaje."'  where codi_cliente = '".$_POST["codigo-cliente"]."'");
+      //Consultamos los puntos validos para el servicio x
+      $var = mysql_query("select * from tb_productos where id_producto = $producto");
+      while ($file = mysql_fetch_array($var) ) {
+        $puntaje = $file[8];
+      }
 
-       }
-       else
-       {
-         mysql_query("insert into  tb_puntaje_cliente (codi_cliente,puntaje_cliente) values ('".$_POST["codigo-cliente"]."', $puntaje );
-       }
-
-     }
-
+      if (isset($id_producto)) {
+        mysql_query("update tb_puntaje_cliente set puntaje_cliente = puntaje_cliente + '".$puntaje."' where codi_cliente = $cliente");
+      }
+      else {
+        mysql_query("insert into tb_puntaje_cliente (codi_cliente,puntaje_cliente) values('$cliente','$puntaje')");
+      }
+    }
   }
 
 $numero_factura	 = $_POST["numero_factura"];
@@ -54,12 +58,9 @@ $monto_neto = str_replace('.', '', $_POST["subTotal"]);
 $monto_iva = str_replace('.', '', $_POST["ivaRes"]);
 $monto_total = str_replace('.', '', $_POST["genTotal"]);
 
-
 $monto_neto = str_replace(',', '.', $monto_neto);
 $monto_iva = str_replace(',', '.', $monto_iva);
 $monto_total = str_replace(',', '.', $monto_total);
-
-
 
 $regFactura = $Facturacion->registraFactura($numero_control,$datepicker,$codi_clie,$monto_neto,$monto_iva,$monto_total);
 
