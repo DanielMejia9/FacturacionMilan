@@ -49,7 +49,7 @@ if(isset($_POST["registrarFact"]) && $_POST["registrarFact"] =='1')
         mysql_query("insert into tb_puntaje_cliente (codi_cliente,puntaje_cliente) values('$cliente','$puntaje')");
       }
 
-      $bitacoraPuntos = mysql_query("insert into tb_detalle_puntos (id_cliente,id_consumo,puntos_asignados,fecha_asignacion) values('$cliente',1,'$puntaje','$fecha_asignacion')");
+      $bitacoraPuntos = mysql_query("insert into tb_detalle_puntos (id_cliente,id_servicio,puntos_asignados,fecha_asignacion) values('$cliente','$producto','$puntaje','$fecha_asignacion')");
     }
   }
 
