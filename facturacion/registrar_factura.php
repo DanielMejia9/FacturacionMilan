@@ -14,6 +14,7 @@ $conectar = $conexion->conecta();
 if(isset($_POST["registrarFact"]) && $_POST["registrarFact"] =='1')
 {
   $cliente = $_POST['codigo-cliente'];
+  $fecha_asignacion = date('Y-m-d', strtotime($_POST["datepicker"]));
 
   for($i=1; $i<10; $i++)
   {
@@ -47,6 +48,8 @@ if(isset($_POST["registrarFact"]) && $_POST["registrarFact"] =='1')
       else {
         mysql_query("insert into tb_puntaje_cliente (codi_cliente,puntaje_cliente) values('$cliente','$puntaje')");
       }
+
+      $bitacoraPuntos = mysql_query("insert into tb_detalle_puntos (id_cliente,id_consumo,puntos_asignados,fecha_asignacion) values('$cliente',1,'$puntaje','$fecha_asignacion')");
     }
   }
 
