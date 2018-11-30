@@ -120,18 +120,6 @@ $atras = 1;
                     <label>Dirección</label>
                     <input type="text" name="dirEmp" id="dirEmp" maxlength="200" size="61" class="form-control"/>
                   </div>
-                  <!--<div class="col-md-3">
-                    <label>Pais:</label>
-                    <input type="text" name="paisEmp"  id="paisEmp" maxlength="12" size="7" class="form-control"/>
-                  </div>
-                  <div class="col-md-3">
-                    <label>Ciudad: </label>
-                    <input type="text" name="ciuEmp"  id="ciuEmp" maxlength="50" size="7" class="form-control"/>
-                  </div>
-                  <div class="col-md-3">
-                    <label>Estado: </label>
-                    <input type="text" name="estEmp"  id="estEmp" maxlength="12" size="7" class="form-control"/>
-                  </div>-->
                 </div>  
                 <br />
                 <div class="row placeholders">
@@ -143,20 +131,12 @@ $atras = 1;
                     <label>Telefonos(opcional):</label>
                     <input type="text" name="telEmpropc" id="telEmpropc" maxlength="14" size="10" class="form-control"/>
                   </div>
-                  <!--<div class="col-md-4">
-                    <label>Contribuyente: </label>
-                    <select name="contEmp" id="contEmp" class="form-control">
-                      <option value="-">-</option>
-                      <option value="SI">SI</option>
-                      <option value="NO">NO</option>
-                    </select>
-                  </div>-->
                 </div>
                 <br />
                 <div class="row placeholders">
                   <div class="col-md-6">
                     <label>Correo electronico:</label>
-                    <input type="text" name="email"  id="email" maxlength="14" size="10" class="form-control"/>
+                    <input type="email" name="email" id="email" size="10" class="form-control"/>
                   </div>
                   <div class="col-md-6">
                     <label>Contraseña:</label>
