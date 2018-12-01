@@ -42,6 +42,10 @@ function validarUser(){
 			alert("Debe indicar un número telefónico");
 			form_clie.telEmpr.focus()
 		}
+		else if(document.getElementById("email").value==""){
+			alert("Debe indicar un número telefónico");
+			form_clie.email.focus()
+		}
 		else{
 			//document.form_clie.action ="controle/modelo.php"
 			document.form_clie.submit();
@@ -638,7 +642,7 @@ function validarFactura()
 													
 	}                       
 	
-		function mProducto()
+	function mProducto()
 	{
 		if(document.getElementById("categoria").value =='0' || document.getElementById("marca").value =='0')
 		{

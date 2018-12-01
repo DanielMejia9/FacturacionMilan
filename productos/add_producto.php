@@ -27,7 +27,10 @@ $atras = 1;
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="../css/bootstrap.min.css"">
 
@@ -38,14 +41,11 @@ $atras = 1;
 <!-- Latest compiled and minified JavaScript -->
 <script src="../jscript/bootstrap.min.js"></script>
 
-<script  type="application/javascript" src="jscript/funciones.js"></script>
+<script  type="application/javascript" src="../jscript/funciones.js"></script>
 
 
 <link rel="stylesheet" href="../css/style.css"/>
 <link rel="shortcut icon" href="../favicon.ico">
-<script  type="application/javascript" src="../jscript/funciones.js"></script>
-<script type="text/javascript" src="../jscript/jquery-1.4.2.min.js"></script>
-<script language="javascript" src="../jscript/jquery-1.3.min.js"></script>
 <script src="../jscript/jquery.ui.core.js"></script>
 <script src="../jscript/jquery.ui.widget.js"></script>
 <script src="../jscript/jquery.ui.datepicker.js"></script>
@@ -87,7 +87,7 @@ $atras = 1;
                 </div>
                 <br><br><br><br>
                 <div class="row placeholders">
-                     <form name="form_producto" id="form_producto" action="add_producto.php" method="post">
+                     <form name="form_producto" id="form_producto" action="add_producto.php" method="post" autocomplete="off">
 
 
                        <div class="row placeholders">

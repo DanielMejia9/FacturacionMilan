@@ -87,7 +87,7 @@ $atras = 1;
                 </div>
                 <br><br>
                 <div class="row placeholders">
-                     <form name="form_categoria" id="form_categoria" action="add_categoria.php" method="post">
+                     <form name="form_categoria" id="form_categoria" action="add_categoria.php" method="post" autocomplete="off">
                        
                                
                        <div class="row placeholders">

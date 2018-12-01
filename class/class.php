@@ -6,8 +6,8 @@ class Conectar
     {
         //Hacemos la conexion a la BD e ingresamos el nombre de servidor
         //el usuario  y su clave
-        //$con = mysql_connect("localhost", "factura_user", "Tsa5h34?");
-         $con = mysql_connect("localhost", "root", "");
+        $con = mysql_connect("localhost", "factura_user", "Tsa5h34?");
+        //$con = mysql_connect("localhost", "root", "");
         //Le deciamos que tipo de cotejamiento será utilizado
         mysql_query("SET NAMES 'utf8'");
         //nos conectamos a la BD
@@ -134,14 +134,20 @@ class Cliente
     }
 
     //Editamos el Cliente que deseamos actualizar
-    public function EditarCliente($codigo, $cedula, $nom, $apellido, $fecha, $dire, $tele, $telepc, $puntos)
+    public function EditarCliente($codigo, $cedula, $nom, $apellido, $fecha, $dire, $tele, $telepc, $email, $password, $puntos)
     {
         if ($puntos != NULL) {
             $udPuntos = "UPDATE tb_puntaje_cliente SET puntaje_cliente = '$puntos' WHERE codi_cliente = '$codigo'";
             mysql_query($udPuntos, Conectar::conecta());
         }
 
-        $sql = "UPDATE tb_regi_cli set cedula = '$cedula', nomb_clie = '$nom', ape_clie = '$apellido', fech_clie ='$fecha', dire_clie = '$dire', tele_clie = '$tele', tele_clie_opci = '$telepc' WHERE codi_clie = '$codigo'";
+        if ($password != NULL) {
+            $clave = md5($password);
+            $udPass = "UPDATE tb_regi_cli SET password = '$clave' WHERE codi_cliente = '$codigo'";
+            mysql_query($udPass, Conectar::conecta());
+        }
+
+        $sql = "UPDATE tb_regi_cli set cedula = '$cedula', nomb_clie = '$nom', ape_clie = '$apellido', fech_clie ='$fecha', dire_clie = '$dire', tele_clie = '$tele', tele_clie_opci = '$telepc', email = '$email' WHERE codi_clie = '$codigo'";
 
         $reg = mysql_query($sql, Conectar::conecta());
         echo "<script type='text/javascript'>
@@ -150,7 +156,6 @@ class Cliente
 			</script>";
 
     }
-
 
     //Registramos los Clientes
     public function AnadirCliente($cedula, $nom_cliente, $ape_cliente, $fecha, $dire, $tele, $telepc, $email, $clave)
@@ -455,10 +460,10 @@ Class Productos
     }
 
         //Editamos el Producto que deseamos actualizar
-    public function EditarProducto($id, $producto, $categoria,$marca,$cantidad,$costo,$precio,$minimo,$fecha)
+    public function EditarProducto($id, $producto, $categoria, $marca, $cantidad, $costo, $precio, $minimo, $puntaje, $fecha)
     {
         //echo $codigo,$nom,$rif,$nit,$fecha,$dire,$pais,$cuidad,$estado,$tele,$telepc,$cont;
-        $sql = "UPDATE tb_productos set descripcion_producto = '$producto', id_categoria = '$categoria', id_marca = '$marca', cantidad_producto = '$cantidad', costo_producto = $costo, precio_producto = '$precio', minimo_stock = '$minimo', fecha_creacion ='$fecha' WHERE id_producto = '$id'";
+        $sql = "UPDATE tb_productos set descripcion_producto = '$producto', id_categoria = '$categoria', id_marca = '$marca', cantidad_producto = '$cantidad', costo_producto = $costo, precio_producto = '$precio', minimo_stock = '$minimo', puntaje = '$puntaje', fecha_creacion ='$fecha' WHERE id_producto = '$id'";
 
         $reg = mysql_query($sql, Conectar::conecta());
         echo "<script type='text/javascript'>

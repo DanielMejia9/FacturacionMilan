@@ -11,7 +11,7 @@ if(isset($_POST["guardar"]) and $_POST["guardar"]=="si")
 	//print_r($_POST);
 	//print_r($_POST["codi_clie"]);
   $datepicker      = date('Y-m-d', strtotime($_POST["datepicker"]));
-  $cate->EditarProducto($_POST["id"],$_POST["producto"],$_POST["categoria"],$_POST["marca"],$_POST["cantidad"],$_POST["costo"],$_POST["precio"],$_POST["minimo"],$datepicker);
+  $cate->EditarProducto($_POST["id"],$_POST["producto"],$_POST["categoria"],$_POST["marca"],$_POST["cantidad"],$_POST["costo"],$_POST["precio"],$_POST["minimo"],$_POST["puntaje"],$datepicker);
   exit;
 	}
 $mod = $cate->ListarProductos($_GET["id_producto"]);
@@ -28,23 +28,25 @@ $atras = 1;
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="../css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="../jscript/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script  type="application/javascript" src="jscript/funciones.js"></script>
+<script src="../jscript/bootstrap.min.js"></script>
+<script  type="application/javascript" src="../jscript/funciones.js"></script>
 
 
 <link rel="stylesheet" href="../css/style.css"/>
 <link rel="shortcut icon" href="../favicon.ico">
 <script  type="application/javascript" src="../jscript/funciones.js"></script>
-<script type="text/javascript" src="../jscript/jquery-1.4.2.min.js"></script>
 <script language="javascript" src="../jscript/jquery-1.3.min.js"></script>
 <script src="../jscript/jquery.ui.core.js"></script>
 <script src="../jscript/jquery.ui.widget.js"></script>
@@ -90,12 +92,12 @@ $atras = 1;
                      <form name="form_producto" id="form_producto" action="modificar_producto.php" method="post">
                        <div class="row">
                             <div class="col-md-3">
-                               <label>ID:</label>
-                               <input type="text" name="" id="" value="<?php echo $mod[0]['id_producto']; ?>" maxlength="250" size="50" class="form-control" />
+                              <label>Producto:</label>
+                              <input type="text" name="producto" id="producto" value="<?php echo $mod[0]['descripcion_producto']; ?>" maxlength="250" size="50" class="form-control" />
                              </div>
                              <div class="col-md-3">
-                               <label>Producto:</label>
-                               <input type="text" name="producto" id="producto" value="<?php echo $mod[0]['descripcion_producto']; ?>" maxlength="250" size="50" class="form-control" />
+                               <label>Puntaje:</label>
+                               <input type="text" name="puntaje" id="puntaje" value="<?php echo $mod[0]['puntaje']; ?>" maxlength="250" size="50" class="form-control" />
                              </div>
                              <div class="col-md-3">
                                <label>Categoria:</label>

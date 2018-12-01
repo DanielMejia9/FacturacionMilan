@@ -11,7 +11,7 @@ if(isset($_POST["guardar"]) and $_POST["guardar"]=="si")
 {
 	//print_r($_POST);
 	//print_r($_POST["codi_clie"]);
-	$clie->EditarCliente($_POST["codi_clie"],$_POST["cedula"],$_POST["nom_cliente"],$_POST["ape_cliente"],$_POST["datepicker"],$_POST["dirEmp"],$_POST["telEmpr"],$_POST["telEmpropc"],$_POST["puntos"]);
+	$clie->EditarCliente($_POST["codi_clie"],$_POST["cedula"],$_POST["nom_cliente"],$_POST["ape_cliente"],$_POST["datepicker"],$_POST["dirEmp"],$_POST["telEmpr"],$_POST["telEmpropc"],$_POST["email"],$_POST["password"],$_POST["puntos"]);
 	exit;
 	}
 $mod = $clie->ListarCliente($_GET["codi_clie"]);
@@ -111,18 +111,6 @@ $atras = 1;
                     <label>Dirección</label>
                     <input type="text" name="dirEmp" value="<?php echo $mod[0]['dire_clie'] ?>" id="dirEmp" maxlength="200" size="61" class="form-control"/>
                   </div>
-                  <!--<div class="col-md-3">
-                    <label>Pais:</label>
-                    <input type="text" name="paisEmp" value="<?php echo $mod[0]['pais_clie'] ?>" id="paisEmp" maxlength="12" size="7" class="form-control"/>
-                  </div>
-                  <div class="col-md-3">
-                    <label>Ciudad: </label>
-                    <input type="text" name="ciuEmp" value="<?php echo $mod[0]['ciud_clie'] ?>" id="ciuEmp" maxlength="50" size="7" class="form-control"/>
-                  </div>
-                  <div class="col-md-3">
-                    <label>Estado: </label>
-                    <input type="text" name="estEmp" value="<?php echo $mod[0]['esta_clie'] ?>" id="estEmp" maxlength="12" size="7" class="form-control"/>
-                  </div>-->
                 </div>  
                 <div class="row">
                   <div class="col-md-6">
@@ -132,6 +120,16 @@ $atras = 1;
                   <div class="col-md-6">
                     <label>Telefonos(opcional):</label>
                     <input type="text" name="telEmpropc" value="<?php echo $mod[0]['tele_clie_opci'] ?>" id="telEmpropc" maxlength="14" size="10" class="form-control"/>
+                  </div>
+                </div> 
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>Correo electronico:</label>
+                    <input type="text" name="email" value="<?php echo $mod[0]['email'] ?>" id="email" size="10" class="form-control"/>
+                  </div>
+                  <div class="col-md-6">
+                    <label>Contraseña:</label>
+                    <input type="text" name="password" id="password" maxlength="14" size="10" class="form-control"/>
                   </div>
                 </div> 
                 <div class="row">
