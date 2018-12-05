@@ -17,8 +17,8 @@
                       <ul class="nav navbar-nav navbar-right">
                       <li class=""><a href="/modulo.php">Inicio<span class="sr-only">(current)</span></a></li>
                       <li class=""><a href="/cliente/registro_cliente.php">Clientes <span class="sr-only">(current)</span></a></li>
-                      <li class=""><a href="/expediente/h_expediente.php">Expediente <span class="sr-only">(current)</span></a></li>
-                        <li>
+                      <li class=""><a href="/empleados/registro_empleados.php">Empleados <span class="sr-only">(current)</span></a></li>
+                      <li>
                         <a href="../contabilidad/index.php">Contabilidad</a>
                             <ul class="dropdown-menu">
                                <li><a href="/contabilidad/libro_de_ventas.php">Libro de Ventas</a></li>
@@ -31,14 +31,8 @@
                                </li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Emisión<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li class=""><a href="/recibo/recibo.php?valor=0">Recibo <span class="sr-only">(current)</span></a></li>
-                              <li class=""><a href="/facturacion/facturacion.php?valor=0">Facturaci&oacute;n <span class="sr-only">current)</span></a></li>
-                              <li class=""><a href="/presupuesto/presupuesto.php?valor=0">Presupuesto <span class="sr-only">(current)</span></a></li>
-                            </ul> 
-                        </li>   
+                        
+                        <li class=""><a href="/facturacion/facturacion.php?valor=0">Facturaci&oacute;n <span class="sr-only">current)</span></a></li>
                         
 
                         <li class="dropdown">
@@ -46,7 +40,7 @@
                             <ul class="dropdown-menu">
                               <li class=""><a href="/productos/registro_producto.php">Producto<span class="sr-only">(current)</span></a></li>
                               <li class=""><a href="/productos/registro_categoria.php">Categoria<span class="sr-only">current)</span></a></li>
-                              <li class=""><a href="/productos/registro_categoria.php">Marcas<span class="sr-only">current)</span></a></li>
+                              <li class=""><a href="/productos/registro_marca.php">Marcas<span class="sr-only">current)</span></a></li>
                               <li class=""><a href="/productos/index.php">Todos<span class="sr-only">(current)</span></a></li>
                             </ul> 
                         </li> 

@@ -263,7 +263,7 @@ $atras = 1;
                        </tr>
                        <tr>
                         	<td  colspan="3"></td>
-                            <td align="">I.V.A (12%)</td>
+                            <td align="">I.V.A (19%)</td>
                             <td align=""><input type="text" class="inputTxt" id="ivaRes" name="ivaRes"/></td>
                             
                        </tr>

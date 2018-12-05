@@ -52,6 +52,42 @@ function validarUser(){
 		}                       
 	}
 
+	function validarRegistroEmpleado(){
+		
+		if(document.getElementById("nombre").value==""){
+			alert("Debe escribir el nombre del empleado");
+			form_empleado.nombre.focus()
+		}
+		else if(document.getElementById("apellido").value==""){
+			alert("Debe escribir el apellido");
+			form_empleado.apellido.focus()
+		}
+		else if(document.getElementById("cedula").value==""){
+			alert("Debe escribir la cédula del empleado");
+			form_empleado.cedula.focus()
+		}
+		else if(document.getElementById("datepicker").value==""){
+			alert("Debe indicar la fecha");
+			form_empleado.datepicker.focus()
+		}
+		else if(document.getElementById("direccion").value==""){
+			alert("Debe escribir la dirección");
+			form_empleado.direccion.focus()
+		}
+		else if(document.getElementById("telefono_p").value==""){
+			alert("Debe indicar un número telefónico");
+			form_empleado.telefono_p.focus()
+		}
+		else if(document.getElementById("cargo").value==""){
+			alert("Debe indicar un cargo para el empleado");
+			form_empleado.cargo.focus()
+		}
+		else{
+			//document.form_empleado.action ="controle/modelo.php"
+			document.form_empleado.submit();
+		}                      
+	}
+
 	function validaRegCat(){
 		
 		if(document.getElementById("nombre").value==""){
@@ -453,7 +489,7 @@ function suma(v1,v2){
 			}
 			if (selectiva ==1)
 			{
-				iva = valorTotal * 0.12;
+				iva = valorTotal * 0.19;
 				}
 			
 		
@@ -657,7 +693,13 @@ function validarFactura()
 
 	{
 		document.form_categoria.submit();												
-		}  
+	}
+
+	function validaMarca()
+
+	{
+		document.form_marca.submit();												
+	}  
 		
 	function validaProducto()
 

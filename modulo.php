@@ -86,7 +86,7 @@ Push.create("Bienvenidos a Admin", {
                             <div class="row placeholders" >
                     <div class="col-xs-6 col-sm-2" >
                         <div class="ico_acceso">
-                            <a href="empleados/registro_empleado.php"><img src="images/ico-emp.png" border="0" width="128" />
+                            <a href="empleados/registro_empleados.php"><img src="images/ico-emp.png" border="0" width="128" />
                             <div>Empleados</div>
                         </div>
                     </div>
@@ -94,12 +94,6 @@ Push.create("Bienvenidos a Admin", {
                         <div class="ico_acceso">
                             <a href="cliente/registro_cliente.php"><img src="images/ico-nom.png" border="0" width="128" /></a>
                             <div>Cliente</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-2">
-                        <div class="ico_acceso">
-                            <a href="registro_contacto.php" ><img src="images/ico-contactos.png" border="0" width="128" /></a>
-                            <div>Contactos</div>
                         </div>
                     </div>
                     <div class="col-xs-6 col-sm-2">
@@ -115,60 +109,35 @@ Push.create("Bienvenidos a Admin", {
                         </div>                    
                     </div>    
                     <div class="col-xs-6 col-sm-2">
-                    <div class="ico_acceso">
-                            <img src="images/ico-new.png" border="0" width="128" />
-                            <div>Modulos</div>
-                        </div>   
-                        </div>             
-                </div>
-                <div class="row placeholders">
-                    <div class="col-xs-6 col-sm-2">
                         <div class="ico_acceso">
                             <a href="recibo/recibo.php?valor=0"><img src="images/ico-recibos.png" border="0" width="128" />
                             <div>Emisión de Recibos</div>
-                        </div>
-                    </div>
+                        </div>                    
+                    </div>   
                     <div class="col-xs-6 col-sm-2">
                         <div class="ico_acceso">
                             <a href="contabilidad/index.php" ><img src="images/ico-contabilidad.png" border="0" width="128" /></a>
                             <div>Contabilidad</div>
                         </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-2" >
-                        <div class="ico_acceso">
-                            <img src="images/ico-cue.png" border="0" width="128" />
-                            <div>Cuenta</div>
-                        </div>
-                    </div>
-                    
+                    </div> 
+                     
+                </div>
+                <div class="row placeholders">
+
                     <div class="col-xs-6 col-sm-2">
                         <div class="ico_acceso">
                             <a href="expediente/h_expediente.php"><img src="images/ico-doc.png" border="0" width="128" /></a>
                             <div>Expediente</div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-2">
-                        <div class="ico_acceso">
-                            <img src="images/ico-pagos.png" border="0" width="128" />
-                            <div>Pagos</div>
+                    <div class="row placeholders">
+                        <div class="col-xs-6 col-sm-2">
+                            <div class="ico_acceso">
+                                <a href="contabilidad/index.php" ><img src="images/ico-soporte.png" border="0" width="128" /></a>
+                                <div>Soporte</div>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-xs-6 col-sm-2">
-                        <div class="ico_acceso">
-                            <a href="configuracion"><img src="images/ico-config.png" border="0" width="128" /></a>
-                            <div>Ajustes</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row placeholders">
-                    <div class="col-xs-6 col-sm-2">
-                        <div class="ico_acceso">
-                            <a href="contabilidad/index.php" ><img src="images/ico-soporte.png" border="0" width="128" /></a>
-                            <div>Soporte</div>
-                        </div>
-                    </div>
-                </div>      
+                    </div>      
                        <?php
                     }
                     if ($tipo==2)
