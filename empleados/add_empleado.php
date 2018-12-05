@@ -1,6 +1,6 @@
 <?php 
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+//error_reporting(E_ALL);
+//ini_set('display_errors', '1');
 
 include("../start.php");
 	  include("../class/class.php");
@@ -70,7 +70,7 @@ $atras = 1;
 <script src="../jscript/modernizr.custom.js"></script>
 
 
-<title>Añadir Cliente</title>
+<title>Añadir Empleado</title>
 </head>
 <body>
  <?php include("../include/menu_top.php")?>

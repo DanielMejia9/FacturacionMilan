@@ -119,79 +119,86 @@ $atras = 1;
                         </div> 
                    </div>
                    <div class="row">
+                        <div class="col-md-2">
+                            Empleado: 
+                            <select id="empleado" name="empleado" class="form-control" required>
+                                <option value="">Seleccione</option>
+                                <?php 
+                                    $list_empleados = mysql_query("select id, nombre, apellido from tb_empleados");
+                                    while($file = mysql_fetch_array($list_empleados)) {
+                                        echo '<option value="'.$file["id"].'">'.$file["nombre"].'</option>';
+                                    }
+                                ?>
+                            </select>
+                        </div>
+
                         <div class="col-md-3">
                              <?php   							
         						//recoge variable de la url
         						$valor = $_GET["valor"];
-        						
         						//Realiza la consulta en la BD
         						$buscar = mysql_query("select * FROM tb_regi_cli WHERE codi_clie = '".$valor."'");
         							//Creamos el Array o Arreglo
         						$row = mysql_fetch_array($buscar);
-                                
-                                
-        						?>
-                            	<input type="hidden" id="codigo-cliente" name="codigo-cliente" value="<?php echo $row["codi_clie"];?>" />
-                                Nombre del Cliente:  
-                               	 <input type="hidden" name="valSelect" id="valSelect"  />
-                                 <select name="sele_clie" id="sele_clie" onchange="onSelect(this.value)" value="<?php echo $row["codi_clie"];?>"  class="form-control" > 
-        						<?php
-        								//Consulta la BD 		
-        								$respuesta=mysql_query("select codi_clie, nomb_clie from tb_regi_cli");
-        								//Se realiza la condicion para saber el valor de la 
-        								//variable $valor
-        								if(($valor ==0))
-        								{
-        									echo '<option value="0" >Seleccione</option>';
-        									while($select =mysql_fetch_array($respuesta)){
-        										echo '
-        											<option value="'.$select["codi_clie"].'"> 
-        											'.$select["nomb_clie"].'</option> ';
-        											}
-        								}
-        								else{
-        										echo '<option  value="'.$row["codi_clie"].'">'.$row["nomb_clie"].'</option> ';
-        											while($select =mysql_fetch_array($respuesta)){
-        											
-        											echo '<option value="'.$select["codi_clie"].'">'.$select["nomb_clie"].'</option>';
-        											}
-        										  }
-        									
-        									
-        									?>
-                                </select>
-                                <input type="hidden" name="nombrecliente" id="nombrecliente"  value="<?php echo $row["nomb_clie"] ?>" />
-                                
-                            </div>
-                            <div class="col-md-4">
-                                Direcci&oacute;n: <input type="text" name="dirEmp" value="<?php echo $row["dire_clie"] ?>" id="dirEmp" maxlength="200" size="56" class="form-control" />
-                            </div>
-                             <div class="col-md-2">
-                                Telefonos*: <input type="text" name="telEmpr"   value="<?php echo $row["tele_clie"] ?>"id="telEmpr" maxlength="11" size="15" class="form-control" />
-                            </div>
-                            <div class="col-md-2">
-                                Telefonos(opcional): <input type="text" name="telEmpropc"  value="<?php echo $row["tele_clie_opci"] ?>" id="telEmpropc" maxlength="11" size="15" class="form-control"  />
-                            </div>
-                            <div class="col-md-1">
+        					?>
+                            <input type="hidden" id="codigo-cliente" name="codigo-cliente" value="<?php echo $row["codi_clie"];?>" />
+                            Cliente:  
+                            <input type="hidden" name="valSelect" id="valSelect"  />
+                            <select name="sele_clie" id="sele_clie" onchange="onSelect(this.value)" value="<?php echo $row["codi_clie"];?>"  class="form-control" > 
+            					<?php
+            						//Consulta la BD 		
+            						$respuesta=mysql_query("select codi_clie, nomb_clie from tb_regi_cli");
+            						//Se realiza la condicion para saber el valor de la 
+            						//variable $valor
+            						if(($valor ==0))
+            						{
+            						  echo '<option value="0" >Seleccione</option>';
+            						  while($select =mysql_fetch_array($respuesta)){
+            						    echo '
+            								<option value="'.$select["codi_clie"].'"> 
+            											'.$select["nomb_clie"].'</option> ';
+            						  }
+            						}
+            						else {
+            							echo '<option  value="'.$row["codi_clie"].'">'.$row["nomb_clie"].'</option> ';
+            							while($select =mysql_fetch_array($respuesta)) {
+            							  echo '<option value="'.$select["codi_clie"].'">'.$select["nomb_clie"].'</option>';
+            							}
+            						}
+            					?>
+                            </select>
+                            <input type="hidden" name="nombrecliente" id="nombrecliente"  value="<?php echo $row["nomb_clie"] ?>" />
+                        </div>
+
+                        <div class="col-md-4">
+                            Direcci&oacute;n: <input type="text" name="dirEmp" value="<?php echo $row["dire_clie"] ?>" id="dirEmp" maxlength="200" size="56" class="form-control" />
+                        </div>
+
+                        <div class="col-md-2">
+                            Telefonos*: <input type="text" name="telEmpr"   value="<?php echo $row["tele_clie"] ?>"id="telEmpr" maxlength="11" size="15" class="form-control" />
+                        </div>
+
+                        <!--div class="col-md-2">
+                            Telefonos(opcional): <input type="text" name="telEmpropc"  value="<?php echo $row["tele_clie_opci"] ?>" id="telEmpropc" maxlength="11" size="15" class="form-control"  />
+                        </div-->
+                        <div class="col-md-1">
                             IVA: <select name="selectiva" id="selectiva" class="form-control" >
-                                            <option value="0">NO</option>
-                                            <option value="1">SI</option>
-                                          </select>
-                            </div>
-                            
-                              
-                        </div> 
-                        <br />
-                        <table name="factura" id="factura" class="descFact table table-hover table-bordered" border="0"   align="center" rules="all">
-                             <tr height="20px" style="background:rgba(51, 51, 51, 0.82); color:#FFF; font-weight:bold;">	
-                                 <td width="" align="center"><div><b>Cantidad</b></div></td>
-                                 <td width="" align="center"><div><b>Prod.</b></div></td>
-                                 <td width="" align="center"><div><b>Descripcion</b></div></td>
-                                 <td width="" align="center"><div><b>Precio</b></div></td>
-                                 <td width="" align="center"><div><b>Total</b></div></td>
-                             </tr>
-                    
-                    
+                                    <option value="0">NO</option>
+                                    <option value="1">SI</option>
+                                </select>
+                        </div>
+                    </div> 
+
+                    <br />
+
+                    <table name="factura" id="factura" class="descFact table table-hover table-bordered" border="0"   align="center" rules="all">
+                        <tr height="20px" style="background:rgba(51, 51, 51, 0.82); color:#FFF; font-weight:bold;">	
+                            <td width="" align="center"><div><b>Cantidad</b></div></td>
+                            <td width="" align="center"><div><b>Prod.</b></div></td>
+                            <td width="" align="center"><div><b>Descripcion</b></div></td>
+                            <td width="" align="center"><div><b>Precio</b></div></td>
+                            <td width="" align="center"><div><b>Total</b></div></td>
+                        </tr>
                 <?php
         
         		$sumaTotal = 0;

@@ -124,20 +124,8 @@ Push.create("Bienvenidos a Admin", {
                 </div>
                 <div class="row placeholders">
 
-                    <div class="col-xs-6 col-sm-2">
-                        <div class="ico_acceso">
-                            <a href="expediente/h_expediente.php"><img src="images/ico-doc.png" border="0" width="128" /></a>
-                            <div>Expediente</div>
-                        </div>
-                    </div>
-                    <div class="row placeholders">
-                        <div class="col-xs-6 col-sm-2">
-                            <div class="ico_acceso">
-                                <a href="contabilidad/index.php" ><img src="images/ico-soporte.png" border="0" width="128" /></a>
-                                <div>Soporte</div>
-                            </div>
-                        </div>
-                    </div>      
+                   
+                    
                        <?php
                     }
                     if ($tipo==2)

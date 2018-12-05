@@ -200,8 +200,8 @@ class Cliente
     //Registramos los Clientes
     public function AnadirEmpleado($cedula, $nombre, $apellido, $fecha, $direccion, $telep, $teles, $email, $cargo)
     {
-        //$con = mysqli_connect("localhost", "factura_user", "Tsa5h34?","facturacion_milan");
-        $con = mysqli_connect("localhost", "root", "","facturacion_milan");
+        $con = mysqli_connect("localhost", "factura_user", "Tsa5h34?","facturacion_milan");
+        //$con = mysqli_connect("localhost", "root", "","facturacion_milan");
 
         $fecha_nacimiento = date("Y-m-d", strtotime($fecha));
         $sql = mysqli_query($con, "INSERT INTO tb_empleados (cedula, nombre, apellido, fecha_nacimiento, direccion, telefono_principal, telefono_secundario, email, cargo_ocupacion) VALUES ('$cedula','$nombre','$apellido','$fecha_nacimiento','$direccion','$telep','$teles','$email','$cargo')");
@@ -287,7 +287,8 @@ class Cliente
      //Registramos las marcas
     public function AnadirMarca($descripcion)
     {
-        $con = mysqli_connect("localhost", "root", "","facturacion_milan");
+        //$con = mysqli_connect("localhost", "root", "","facturacion_milan");
+        $con = mysqli_connect("localhost", "factura_user", "Tsa5h34?","facturacion_milan");
         $sql = mysqli_query($con, "INSERT INTO tb_marcas (descripcion_marca) VALUES ('$descripcion')");
         //en este caso  como el codi_clie de la BD es PRIMARY
         echo "<script type='text/javascript'>

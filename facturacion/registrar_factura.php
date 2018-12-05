@@ -14,6 +14,7 @@ $conectar = $conexion->conecta();
 if(isset($_POST["registrarFact"]) && $_POST["registrarFact"] =='1')
 {
   $cliente = $_POST['codigo-cliente'];
+  $empleado = $_POST['empleado'];
   $fecha_asignacion = date('Y-m-d', strtotime($_POST["datepicker"]));
 
   for($i=1; $i<10; $i++)
@@ -27,6 +28,14 @@ if(isset($_POST["registrarFact"]) && $_POST["registrarFact"] =='1')
     if($cantidad!='' && $descripcion!='')
     {
       mysql_query("insert into tb_detalle_factura (codi_factu,cantidad,descripcion, id_producto, precio)values('$numero_factura','$cantidad','$descripcion','$producto','$precio')");
+      
+      $detalle_factura = mysql_query("SELECT MAX(codi_detalle) AS id FROM tb_detalle_factura");
+      if ($row = mysql_fetch_row($detalle_factura)) {
+        $id_detalle_factura = trim($row[0]);
+      }
+
+      mysql_query("INSERT INTO tb_reporte_empleados (id_empleado, id_detalle_factura, fecha)
+                          VALUES('$empleado','$id_detalle_factura','$fecha_asignacion')");
       
       mysql_query("update tb_productos set cantidad_producto = cantidad_producto - '".$cantidad."' where id_producto = '".$producto."'");
 
