@@ -1,304 +1,376 @@
--- phpMyAdmin SQL Dump
--- version 4.8.3
--- https://www.phpmyadmin.net/
+-- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
 --
--- Servidor: localhost:3306
--- Tiempo de generación: 02-12-2018 a las 08:54:28
--- Versión del servidor: 5.5.52-MariaDB
--- Versión de PHP: 7.1.14
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
+-- Host: milanbc.com    Database: facturacion_milan
+-- ------------------------------------------------------
+-- Server version	5.5.52-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Base de datos: `facturacion_milan`
+-- Table structure for table `tb_actividad_posteo`
 --
 
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `tb_actividad_posteo`
---
-
+DROP TABLE IF EXISTS `tb_actividad_posteo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_actividad_posteo` (
   `id` int(11) NOT NULL,
-  `actividad` varchar(45) NOT NULL
+  `actividad` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_actividad_posteo`
+-- Dumping data for table `tb_actividad_posteo`
 --
 
-INSERT INTO `tb_actividad_posteo` (`id`, `actividad`) VALUES
-(1, 'Seguir página de MilanBC en Facebook'),
-(2, 'Seguir página de MilanBC en Instagram');
-
--- --------------------------------------------------------
+LOCK TABLES `tb_actividad_posteo` WRITE;
+/*!40000 ALTER TABLE `tb_actividad_posteo` DISABLE KEYS */;
+INSERT INTO `tb_actividad_posteo` VALUES (1,'Seguir página de MilanBC en Facebook'),(2,'Seguir página de MilanBC en Instagram');
+/*!40000 ALTER TABLE `tb_actividad_posteo` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_caja`
+-- Table structure for table `tb_caja`
 --
 
+DROP TABLE IF EXISTS `tb_caja`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_caja` (
-  `id_caja` int(11) NOT NULL,
+  `id_caja` int(11) NOT NULL AUTO_INCREMENT,
   `fecha_caja` datetime DEFAULT NULL,
-  `saldopordia` int(11) DEFAULT NULL
+  `saldopordia` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id_caja`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_caja`
+-- Dumping data for table `tb_caja`
 --
 
-INSERT INTO `tb_caja` (`id_caja`, `fecha_caja`, `saldopordia`) VALUES
-(1, '2018-07-06 00:00:00', 168000);
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `tb_categorias_productos`
---
-
-CREATE TABLE `tb_categorias_productos` (
-  `id_categoria` int(11) NOT NULL,
-  `categoria` varchar(255) DEFAULT NULL,
-  `status_categoria` int(11) DEFAULT NULL,
-  `fecha_creacion` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+LOCK TABLES `tb_caja` WRITE;
+/*!40000 ALTER TABLE `tb_caja` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tb_caja` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Volcado de datos para la tabla `tb_categorias_productos`
+-- Table structure for table `tb_categoria_puntaje`
 --
 
-INSERT INTO `tb_categorias_productos` (`id_categoria`, `categoria`, `status_categoria`, `fecha_creacion`) VALUES
-(1, 'Categoria Prueba', 1, '2018-11-27'),
-(2, 'Servicios', 1, '2018-11-28');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `tb_categoria_puntaje`
---
-
+DROP TABLE IF EXISTS `tb_categoria_puntaje`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_categoria_puntaje` (
-  `id_puntaje` int(11) NOT NULL,
+  `id_puntaje` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_categoria` varchar(255) DEFAULT NULL,
   `images` varchar(255) DEFAULT NULL,
-  `puntaje_categoria` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `puntaje_categoria` int(11) NOT NULL,
+  PRIMARY KEY (`id_puntaje`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_categoria_puntaje`
+-- Dumping data for table `tb_categoria_puntaje`
 --
 
-INSERT INTO `tb_categoria_puntaje` (`id_puntaje`, `nombre_categoria`, `images`, `puntaje_categoria`) VALUES
-(1, 'Bronce', NULL, 10),
-(2, 'Silver', NULL, 15),
-(3, 'Gold', NULL, 20),
-(4, 'Platium', NULL, 30),
-(5, 'Diamond', NULL, 50),
-(6, 'New', NULL, 5);
-
--- --------------------------------------------------------
+LOCK TABLES `tb_categoria_puntaje` WRITE;
+/*!40000 ALTER TABLE `tb_categoria_puntaje` DISABLE KEYS */;
+INSERT INTO `tb_categoria_puntaje` VALUES (1,'Bronce',NULL,10),(2,'Silver',NULL,15),(3,'Gold',NULL,20),(4,'Platium',NULL,30),(5,'Diamond',NULL,50),(6,'New',NULL,5);
+/*!40000 ALTER TABLE `tb_categoria_puntaje` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_config`
+-- Table structure for table `tb_categorias_productos`
 --
 
+DROP TABLE IF EXISTS `tb_categorias_productos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_categorias_productos` (
+  `id_categoria` int(11) NOT NULL AUTO_INCREMENT,
+  `categoria` varchar(255) DEFAULT NULL,
+  `status_categoria` int(11) DEFAULT NULL,
+  `fecha_creacion` date DEFAULT NULL,
+  PRIMARY KEY (`id_categoria`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_categorias_productos`
+--
+
+LOCK TABLES `tb_categorias_productos` WRITE;
+/*!40000 ALTER TABLE `tb_categorias_productos` DISABLE KEYS */;
+INSERT INTO `tb_categorias_productos` VALUES (1,'Barberia',1,'2018-12-05');
+/*!40000 ALTER TABLE `tb_categorias_productos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_config`
+--
+
+DROP TABLE IF EXISTS `tb_config`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_config` (
-  `id_config` int(11) NOT NULL,
+  `id_config` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_emp` varchar(255) DEFAULT NULL,
   `nregistro_emp` varchar(255) DEFAULT NULL,
   `imglogo_emp` varchar(255) DEFAULT NULL,
-  `impuesto_emp` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `impuesto_emp` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_config`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_config`
+-- Dumping data for table `tb_config`
 --
 
-INSERT INTO `tb_config` (`id_config`, `nombre_emp`, `nregistro_emp`, `imglogo_emp`, `impuesto_emp`) VALUES
-(1, 'Tecnología y Desarrollo Jirehpro,C.A', 'J-40135922-1', 'images/Jirehpro_logo.png', '12'),
-(2, 'Dr. Cell', '0', 'images/Jirehpro_logo3.png', '12');
-
--- --------------------------------------------------------
+LOCK TABLES `tb_config` WRITE;
+/*!40000 ALTER TABLE `tb_config` DISABLE KEYS */;
+INSERT INTO `tb_config` VALUES (1,'Tecnología y Desarrollo Jirehpro,C.A','J-40135922-1','images/Jirehpro_logo.png','12'),(2,'Dr. Cell','0','images/Jirehpro_logo3.png','12');
+/*!40000 ALTER TABLE `tb_config` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_detalle_factura`
+-- Table structure for table `tb_detalle_factura`
 --
 
+DROP TABLE IF EXISTS `tb_detalle_factura`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_detalle_factura` (
-  `codi_detalle` int(11) NOT NULL,
+  `codi_detalle` int(11) NOT NULL AUTO_INCREMENT,
   `codi_factu` int(11) DEFAULT NULL,
   `cantidad` int(11) NOT NULL DEFAULT '0',
   `descripcion` varchar(255) COLLATE utf8_spanish_ci NOT NULL DEFAULT '0',
   `id_producto` int(11) DEFAULT NULL,
-  `precio` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci COMMENT='Detalle de la Venta o Factura';
+  `precio` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`codi_detalle`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci COMMENT='Detalle de la Venta o Factura';
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_detalle_factura`
+-- Dumping data for table `tb_detalle_factura`
 --
 
-INSERT INTO `tb_detalle_factura` (`codi_detalle`, `codi_factu`, `cantidad`, `descripcion`, `id_producto`, `precio`) VALUES
-(1, 1, 1, 'Corte de Cabello', 3, 5000),
-(2, 2, 1, 'Corte de barba', 2, 25554),
-(3, 3, 1, 'efefesef', 3, 3444),
-(4, 4, 1, 'Productio', 1, 655465464),
-(5, 5, 1, 'Productos prueba', 1, 46546465),
-(6, 6, 1, 'Corte de baraba', 2, 3232),
-(7, 7, 1, 'Corte de barba', 2, 2147483647),
-(8, 8, 1, 'corte de cabello', 3, 5000),
-(9, 9, 1, 'Producto', 1, 5000),
-(10, 9, 1, 'Barba', 2, 5555),
-(11, 9, 1, 'cabello', 3, 34344),
-(12, 10, 2, 'Producto', 1, 22222),
-(13, 11, 1, 'prueba', 1, 555),
-(14, 11, 1, 'barba', 2, 434),
-(15, 11, 1, 'cabello', 3, 322);
-
--- --------------------------------------------------------
+LOCK TABLES `tb_detalle_factura` WRITE;
+/*!40000 ALTER TABLE `tb_detalle_factura` DISABLE KEYS */;
+INSERT INTO `tb_detalle_factura` VALUES (1,1,1,'prueba',1,555);
+/*!40000 ALTER TABLE `tb_detalle_factura` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_detalle_gastos`
+-- Table structure for table `tb_detalle_gastos`
 --
 
+DROP TABLE IF EXISTS `tb_detalle_gastos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_detalle_gastos` (
-  `codi_detalle_gastos` int(11) NOT NULL,
+  `codi_detalle_gastos` int(11) NOT NULL AUTO_INCREMENT,
   `codi_gastos` int(11) DEFAULT NULL,
   `cantidad` int(11) NOT NULL DEFAULT '0',
   `descripcion` varchar(255) COLLATE utf8_spanish_ci NOT NULL DEFAULT '0',
-  `precio` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci COMMENT='Detalle de los Gastos';
-
--- --------------------------------------------------------
+  `precio` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`codi_detalle_gastos`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci COMMENT='Detalle de los Gastos';
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Estructura de tabla para la tabla `tb_detalle_puntos`
+-- Dumping data for table `tb_detalle_gastos`
 --
 
+LOCK TABLES `tb_detalle_gastos` WRITE;
+/*!40000 ALTER TABLE `tb_detalle_gastos` DISABLE KEYS */;
+INSERT INTO `tb_detalle_gastos` VALUES (1,1,1,'gasa absorbente no esteril',6800),(2,1,1,'brocha en abanico',4900);
+/*!40000 ALTER TABLE `tb_detalle_gastos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_detalle_puntos`
+--
+
+DROP TABLE IF EXISTS `tb_detalle_puntos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_detalle_puntos` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_cliente` int(11) NOT NULL,
   `id_servicio` int(11) NOT NULL,
   `puntos_asignados` int(11) NOT NULL,
-  `fecha_asignacion` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `fecha_asignacion` date NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_detalle_puntos`
+-- Dumping data for table `tb_detalle_puntos`
 --
 
-INSERT INTO `tb_detalle_puntos` (`id`, `id_cliente`, `id_servicio`, `puntos_asignados`, `fecha_asignacion`) VALUES
-(1, 3, 3, 10, '2018-12-01'),
-(2, 3, 2, 2, '2018-12-01'),
-(3, 3, 3, 10, '2018-12-01'),
-(4, 5, 1, 1, '2018-12-01'),
-(5, 5, 1, 1, '2018-12-01'),
-(6, 5, 2, 1, '2018-12-01'),
-(7, 5, 2, 2, '2018-12-01'),
-(8, 5, 3, 3, '2018-12-01'),
-(9, 5, 1, 1, '2018-12-01'),
-(10, 5, 2, 2, '2018-12-01'),
-(11, 5, 3, 3, '2018-12-01'),
-(12, 5, 1, 1, '2018-12-01'),
-(13, 5, 1, 1, '2018-12-01'),
-(14, 5, 2, 2, '2018-12-01'),
-(15, 5, 3, 3, '2018-12-01');
-
--- --------------------------------------------------------
+LOCK TABLES `tb_detalle_puntos` WRITE;
+/*!40000 ALTER TABLE `tb_detalle_puntos` DISABLE KEYS */;
+INSERT INTO `tb_detalle_puntos` VALUES (1,1,1,1,'2018-12-05');
+/*!40000 ALTER TABLE `tb_detalle_puntos` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_expediente`
+-- Table structure for table `tb_empleados`
 --
 
+DROP TABLE IF EXISTS `tb_empleados`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_empleados` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cedula` varchar(45) NOT NULL,
+  `nombre` varchar(25) NOT NULL,
+  `apellido` varchar(25) NOT NULL,
+  `fecha_nacimiento` date NOT NULL,
+  `direccion` varchar(45) NOT NULL,
+  `telefono_principal` varchar(15) NOT NULL,
+  `telefono_secundario` varchar(15) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `cargo_ocupacion` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_empleados`
+--
+
+LOCK TABLES `tb_empleados` WRITE;
+/*!40000 ALTER TABLE `tb_empleados` DISABLE KEYS */;
+INSERT INTO `tb_empleados` VALUES (1,'18190473','Daniel','Mejia','2018-12-12','dswawa','adawd','awdawd','awdawd','awdawda');
+/*!40000 ALTER TABLE `tb_empleados` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_expediente`
+--
+
+DROP TABLE IF EXISTS `tb_expediente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_expediente` (
-  `codi_exp` int(11) NOT NULL,
+  `codi_exp` int(11) NOT NULL AUTO_INCREMENT,
   `titulo` varchar(255) DEFAULT NULL,
   `descripcion` varchar(25000) DEFAULT NULL,
-  `codi_clie` int(11) DEFAULT NULL
+  `codi_clie` int(11) DEFAULT NULL,
+  PRIMARY KEY (`codi_exp`),
+  KEY `codi_clie` (`codi_clie`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Estructura de tabla para la tabla `tb_factura`
+-- Dumping data for table `tb_expediente`
 --
 
+LOCK TABLES `tb_expediente` WRITE;
+/*!40000 ALTER TABLE `tb_expediente` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tb_expediente` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_factura`
+--
+
+DROP TABLE IF EXISTS `tb_factura`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_factura` (
-  `codi_factu` int(11) NOT NULL,
+  `codi_factu` int(11) NOT NULL AUTO_INCREMENT,
   `num_control` varchar(10) COLLATE utf8_spanish2_ci DEFAULT NULL,
   `fech_emis` date DEFAULT '0000-00-00',
   `codi_clie` int(11) DEFAULT NULL,
   `monto_neto` decimal(10,2) DEFAULT NULL,
   `monto_iva` decimal(10,2) DEFAULT NULL,
-  `monto_total` decimal(10,2) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci COMMENT='Tabla para el registro de las facturas';
+  `monto_total` decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (`codi_factu`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci COMMENT='Tabla para el registro de las facturas';
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_factura`
+-- Dumping data for table `tb_factura`
 --
 
-INSERT INTO `tb_factura` (`codi_factu`, `num_control`, `fech_emis`, `codi_clie`, `monto_neto`, `monto_iva`, `monto_total`) VALUES
-(1, '0001', '2018-12-01', 3, '5000.00', '0.00', '5000.00'),
-(2, '0002', '2018-12-01', 3, '25554.00', '0.00', '25554.00'),
-(3, '0003', '2018-12-01', 3, '344.00', '0.00', '344.00'),
-(4, '0004', '2018-12-01', 5, '99999999.99', '0.00', '99999999.99'),
-(5, '0005', '2018-12-01', 5, '46546465.00', '0.00', '46546465.00'),
-(6, '0006', '2018-12-01', 5, '3232.00', '0.00', '3232.00'),
-(7, '0007', '2018-12-01', 5, '99999999.99', '0.00', '99999999.99'),
-(8, '0008', '2018-12-01', 5, '0.00', '0.00', '0.00'),
-(9, '0009', '2018-12-01', 5, '44899.00', '0.00', '44899.00'),
-(10, '00010', '2018-12-01', 5, '0.00', '0.00', '0.00'),
-(11, '00011', '2018-12-01', 5, '1311.00', '0.00', '1311.00');
-
--- --------------------------------------------------------
+LOCK TABLES `tb_factura` WRITE;
+/*!40000 ALTER TABLE `tb_factura` DISABLE KEYS */;
+INSERT INTO `tb_factura` VALUES (1,'0001','2018-12-05',1,555.00,0.00,555.00);
+/*!40000 ALTER TABLE `tb_factura` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_gastos`
+-- Table structure for table `tb_gastos`
 --
 
+DROP TABLE IF EXISTS `tb_gastos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_gastos` (
-  `codi_gastos` int(11) NOT NULL,
+  `codi_gastos` int(11) NOT NULL AUTO_INCREMENT,
   `fech_emis` date DEFAULT '0000-00-00',
   `monto_neto` decimal(10,2) DEFAULT NULL,
   `monto_iva` decimal(10,2) DEFAULT NULL,
-  `monto_total` decimal(10,2) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci COMMENT='Tabla para el registro de los gastos';
-
--- --------------------------------------------------------
+  `monto_total` decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (`codi_gastos`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci COMMENT='Tabla para el registro de los gastos';
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Estructura de tabla para la tabla `tb_marcas`
+-- Dumping data for table `tb_gastos`
 --
 
+LOCK TABLES `tb_gastos` WRITE;
+/*!40000 ALTER TABLE `tb_gastos` DISABLE KEYS */;
+INSERT INTO `tb_gastos` VALUES (1,'2018-12-04',11700.00,0.00,11700.00);
+/*!40000 ALTER TABLE `tb_gastos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_marcas`
+--
+
+DROP TABLE IF EXISTS `tb_marcas`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_marcas` (
-  `id_marca` int(11) NOT NULL,
-  `descripcion_marca` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id_marca` int(11) NOT NULL AUTO_INCREMENT,
+  `descripcion_marca` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id_marca`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_marcas`
+-- Dumping data for table `tb_marcas`
 --
 
-INSERT INTO `tb_marcas` (`id_marca`, `descripcion_marca`) VALUES
-(1, 'generica');
-
--- --------------------------------------------------------
+LOCK TABLES `tb_marcas` WRITE;
+/*!40000 ALTER TABLE `tb_marcas` DISABLE KEYS */;
+INSERT INTO `tb_marcas` VALUES (1,'Generica');
+/*!40000 ALTER TABLE `tb_marcas` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_productos`
+-- Table structure for table `tb_productos`
 --
 
+DROP TABLE IF EXISTS `tb_productos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_productos` (
-  `id_producto` int(11) NOT NULL,
+  `id_producto` int(11) NOT NULL AUTO_INCREMENT,
   `descripcion_producto` varchar(255) DEFAULT NULL,
   `id_categoria` int(11) DEFAULT NULL,
   `id_marca` int(11) DEFAULT NULL,
@@ -307,70 +379,81 @@ CREATE TABLE `tb_productos` (
   `precio_producto` int(11) DEFAULT NULL,
   `minimo_stock` int(11) DEFAULT NULL,
   `puntaje` int(11) DEFAULT NULL,
-  `fecha_creacion` date DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `fecha_creacion` date DEFAULT NULL,
+  PRIMARY KEY (`id_producto`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_productos`
+-- Dumping data for table `tb_productos`
 --
 
-INSERT INTO `tb_productos` (`id_producto`, `descripcion_producto`, `id_categoria`, `id_marca`, `cantidad_producto`, `costo_producto`, `precio_producto`, `minimo_stock`, `puntaje`, `fecha_creacion`) VALUES
-(1, 'Producto prueba', 2, 1, 42, 2, 3, 3, 1, '2018-11-29'),
-(2, 'Corte de barba', 2, 1, 58, 1000, 1000, 10, 2, '2018-11-29'),
-(3, 'Corte de cabello', 2, 1, 13, 2500, 1500, 10, 3, '2018-11-29');
-
--- --------------------------------------------------------
+LOCK TABLES `tb_productos` WRITE;
+/*!40000 ALTER TABLE `tb_productos` DISABLE KEYS */;
+INSERT INTO `tb_productos` VALUES (1,'producto',1,1,0,2000,5000,5,1,'2018-12-05');
+/*!40000 ALTER TABLE `tb_productos` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_puntaje_cliente`
+-- Table structure for table `tb_puntaje_cliente`
 --
 
+DROP TABLE IF EXISTS `tb_puntaje_cliente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_puntaje_cliente` (
-  `codi_puntaje_cliente` int(11) NOT NULL,
+  `codi_puntaje_cliente` int(11) NOT NULL AUTO_INCREMENT,
   `codi_cliente` int(11) DEFAULT NULL,
-  `puntaje_cliente` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `puntaje_cliente` int(11) DEFAULT NULL,
+  PRIMARY KEY (`codi_puntaje_cliente`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_puntaje_cliente`
+-- Dumping data for table `tb_puntaje_cliente`
 --
 
-INSERT INTO `tb_puntaje_cliente` (`codi_puntaje_cliente`, `codi_cliente`, `puntaje_cliente`) VALUES
-(1, 3, 22),
-(2, 5, 37),
-(3, 6, 8);
-
--- --------------------------------------------------------
+LOCK TABLES `tb_puntaje_cliente` WRITE;
+/*!40000 ALTER TABLE `tb_puntaje_cliente` DISABLE KEYS */;
+INSERT INTO `tb_puntaje_cliente` VALUES (1,1,1);
+/*!40000 ALTER TABLE `tb_puntaje_cliente` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_puntos_posteo`
+-- Table structure for table `tb_puntos_posteo`
 --
 
+DROP TABLE IF EXISTS `tb_puntos_posteo`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_puntos_posteo` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_cliente` int(11) NOT NULL,
   `puntos_asignados` int(11) NOT NULL,
   `id_actividad` int(11) NOT NULL,
-  `fecha_posteo` date NOT NULL
+  `fecha_posteo` date NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_puntos_posteo`
+-- Dumping data for table `tb_puntos_posteo`
 --
 
-INSERT INTO `tb_puntos_posteo` (`id`, `id_cliente`, `puntos_asignados`, `id_actividad`, `fecha_posteo`) VALUES
-(1, 5, 8, 2, '2018-12-01'),
-(2, 5, 8, 1, '2018-12-01'),
-(3, 6, 8, 1, '2018-12-01');
-
--- --------------------------------------------------------
+LOCK TABLES `tb_puntos_posteo` WRITE;
+/*!40000 ALTER TABLE `tb_puntos_posteo` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tb_puntos_posteo` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_regi_cli`
+-- Table structure for table `tb_regi_cli`
 --
 
+DROP TABLE IF EXISTS `tb_regi_cli`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_regi_cli` (
-  `codi_clie` int(11) NOT NULL,
+  `codi_clie` int(11) NOT NULL AUTO_INCREMENT,
   `cedula` varchar(45) COLLATE utf8_spanish2_ci NOT NULL,
   `nomb_clie` varchar(250) COLLATE utf8_spanish2_ci NOT NULL,
   `ape_clie` varchar(45) COLLATE utf8_spanish2_ci NOT NULL,
@@ -386,315 +469,143 @@ CREATE TABLE `tb_regi_cli` (
   `email` varchar(45) COLLATE utf8_spanish2_ci DEFAULT NULL,
   `cont_espe_clie` varchar(2) COLLATE utf8_spanish2_ci DEFAULT NULL,
   `fecha_modificado` date DEFAULT NULL,
-  `password` varchar(100) COLLATE utf8_spanish2_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+  `password` varchar(100) COLLATE utf8_spanish2_ci NOT NULL,
+  PRIMARY KEY (`codi_clie`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_regi_cli`
+-- Dumping data for table `tb_regi_cli`
 --
 
-INSERT INTO `tb_regi_cli` (`codi_clie`, `cedula`, `nomb_clie`, `ape_clie`, `rif_clie`, `nit_clie`, `fech_clie`, `dire_clie`, `pais_clie`, `ciud_clie`, `esta_clie`, `tele_clie`, `tele_clie_opci`, `email`, `cont_espe_clie`, `fecha_modificado`, `password`) VALUES
-(1, '12345678', 'Pedro', 'Gonzales', NULL, NULL, '02/11/2018', 'Alguna por alli', NULL, NULL, NULL, '12345678', '87654321', 'prueba@mail.com', NULL, NULL, 'eb0a191797624dd3a48fa681d3061212'),
-(2, '14852963', 'Maria', 'Gonzales', NULL, NULL, '02/11/2018', 'Alguna por allí', NULL, NULL, NULL, '123456789', '9874563210', 'maria@mail.com', NULL, NULL, 'd8578edf8458ce06fbc5bb76a58c5ca4'),
-(3, '4487878', 'Daniel', 'Pinto', NULL, NULL, '29/11/2018', 'Urb. Las rosas,  Sector la explanada, Edifih-44', NULL, NULL, NULL, '04241930146', '04241930146', 'holadanielmejia@gmail.com', NULL, NULL, 'd5802d05bbf0881de2fd823c9560619e'),
-(4, '18592301', 'Erain', 'Moya', NULL, NULL, '29/11/2018', 'Alguna por alli', NULL, NULL, NULL, '12345678998765', '1234567894', 'evmoya.89@gmail.com', NULL, NULL, '3fc0a7acf087f549ac2b266baf94b8b1'),
-(5, '233445', 'Alex', 'Pinto', NULL, NULL, '01/12/2018', 'Urb. Las rosas,  Sector la explanada, Edifih-44', NULL, NULL, NULL, '04241930146', '04241930146', 'danielmejia140488@gmail.com', NULL, NULL, 'eb0a191797624dd3a48fa681d3061212'),
-(6, '24455', 'Daniel Alejandro', 'Pinto', NULL, NULL, '01/12/2018', 'Urb. Las rosas,  Sector la explanada, Edifih-44', NULL, NULL, NULL, '04241930146', '04241930146', 'master@mail.com', NULL, NULL, 'eb0a191797624dd3a48fa681d3061212');
-
--- --------------------------------------------------------
+LOCK TABLES `tb_regi_cli` WRITE;
+/*!40000 ALTER TABLE `tb_regi_cli` DISABLE KEYS */;
+INSERT INTO `tb_regi_cli` VALUES (1,'14789632','Luis','Gonzales',NULL,NULL,'2018-01-12','Alguna por allÃ­',NULL,NULL,NULL,'123456789','987654321','daniel@mejia.com',NULL,NULL,'594b5a31a8ed8a091a566201d3ca232d');
+/*!40000 ALTER TABLE `tb_regi_cli` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_regi_pers_cont`
+-- Table structure for table `tb_regi_pers_cont`
 --
 
+DROP TABLE IF EXISTS `tb_regi_pers_cont`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_regi_pers_cont` (
-  `codi_cont` int(11) NOT NULL,
+  `codi_cont` int(11) NOT NULL AUTO_INCREMENT,
   `nomb_cont` varchar(50) NOT NULL,
   `apel_cont` varchar(50) NOT NULL,
   `cargo_cont` varchar(50) NOT NULL,
   `tele_cont` varchar(11) NOT NULL,
   `corr_cont` varchar(50) NOT NULL,
-  `codi_clie` int(11) NOT NULL
+  `codi_clie` int(11) NOT NULL,
+  PRIMARY KEY (`codi_cont`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Estructura de tabla para la tabla `tb_status_factura`
+-- Dumping data for table `tb_regi_pers_cont`
 --
 
+LOCK TABLES `tb_regi_pers_cont` WRITE;
+/*!40000 ALTER TABLE `tb_regi_pers_cont` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tb_regi_pers_cont` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_reporte_empleados`
+--
+
+DROP TABLE IF EXISTS `tb_reporte_empleados`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tb_reporte_empleados` (
+  `id_reporte` int(11) NOT NULL AUTO_INCREMENT,
+  `id_empleado` int(11) NOT NULL,
+  `id_detalle_factura` int(11) NOT NULL,
+  `fecha` date NOT NULL,
+  PRIMARY KEY (`id_reporte`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf32;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tb_reporte_empleados`
+--
+
+LOCK TABLES `tb_reporte_empleados` WRITE;
+/*!40000 ALTER TABLE `tb_reporte_empleados` DISABLE KEYS */;
+INSERT INTO `tb_reporte_empleados` VALUES (1,0,1,'2018-12-05'),(2,1,1,'2018-12-05');
+/*!40000 ALTER TABLE `tb_reporte_empleados` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tb_status_factura`
+--
+
+DROP TABLE IF EXISTS `tb_status_factura`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_status_factura` (
-  `codi_status` int(11) NOT NULL,
-  `descrip_status_factura` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL
+  `codi_status` int(11) NOT NULL AUTO_INCREMENT,
+  `descrip_status_factura` varchar(255) CHARACTER SET utf8 COLLATE utf8_spanish_ci DEFAULT NULL,
+  PRIMARY KEY (`codi_status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_status_factura`
+-- Dumping data for table `tb_status_factura`
 --
 
-INSERT INTO `tb_status_factura` (`codi_status`, `descrip_status_factura`) VALUES
-(1, 'Pagada'),
-(2, 'Por Cobrar'),
-(3, 'Anulada');
-
--- --------------------------------------------------------
+LOCK TABLES `tb_status_factura` WRITE;
+/*!40000 ALTER TABLE `tb_status_factura` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tb_status_factura` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Estructura de tabla para la tabla `tb_user_reg`
+-- Table structure for table `tb_user_reg`
 --
 
+DROP TABLE IF EXISTS `tb_user_reg`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tb_user_reg` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom_usuario` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL,
   `ape_usuario` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL,
   `ced_usuario` varchar(8) NOT NULL,
   `car_usuario` varchar(50) NOT NULL,
   `password` varchar(50) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL,
   `tip_usuario` int(1) NOT NULL,
-  `id_config` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `id_config` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Volcado de datos para la tabla `tb_user_reg`
+-- Dumping data for table `tb_user_reg`
 --
 
-INSERT INTO `tb_user_reg` (`id`, `nom_usuario`, `ape_usuario`, `ced_usuario`, `car_usuario`, `password`, `tip_usuario`, `id_config`) VALUES
-(300, 'Daniel', 'Mejia', '18190473', 'Gerente General', 'eb0a191797624dd3a48fa681d3061212', 1, 2),
-(301, 'Admin', 'Milan', '00000000', 'Administrador', '7ce501ef908fa56fe85be6ef50605c44', 1, 1),
-(302, 'Erain', 'Moya', '18592301', 'Gerente General', '3fc0a7acf087f549ac2b266baf94b8b1', 1, 2);
+LOCK TABLES `tb_user_reg` WRITE;
+/*!40000 ALTER TABLE `tb_user_reg` DISABLE KEYS */;
+INSERT INTO `tb_user_reg` VALUES (1,'Usuario','Admin','12345678','Administrador del Sistema','b433ce675b32a824e24d762ca0fa1ba9',1,2);
+/*!40000 ALTER TABLE `tb_user_reg` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
--- Índices para tablas volcadas
---
-
---
--- Indices de la tabla `tb_actividad_posteo`
---
-ALTER TABLE `tb_actividad_posteo`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `tb_caja`
---
-ALTER TABLE `tb_caja`
-  ADD PRIMARY KEY (`id_caja`);
-
---
--- Indices de la tabla `tb_categorias_productos`
---
-ALTER TABLE `tb_categorias_productos`
-  ADD PRIMARY KEY (`id_categoria`);
-
---
--- Indices de la tabla `tb_categoria_puntaje`
---
-ALTER TABLE `tb_categoria_puntaje`
-  ADD PRIMARY KEY (`id_puntaje`);
-
---
--- Indices de la tabla `tb_config`
---
-ALTER TABLE `tb_config`
-  ADD PRIMARY KEY (`id_config`);
-
---
--- Indices de la tabla `tb_detalle_factura`
---
-ALTER TABLE `tb_detalle_factura`
-  ADD PRIMARY KEY (`codi_detalle`);
-
---
--- Indices de la tabla `tb_detalle_gastos`
---
-ALTER TABLE `tb_detalle_gastos`
-  ADD PRIMARY KEY (`codi_detalle_gastos`);
-
---
--- Indices de la tabla `tb_detalle_puntos`
---
-ALTER TABLE `tb_detalle_puntos`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `tb_expediente`
---
-ALTER TABLE `tb_expediente`
-  ADD PRIMARY KEY (`codi_exp`),
-  ADD KEY `codi_clie` (`codi_clie`);
-
---
--- Indices de la tabla `tb_factura`
---
-ALTER TABLE `tb_factura`
-  ADD PRIMARY KEY (`codi_factu`);
-
---
--- Indices de la tabla `tb_gastos`
---
-ALTER TABLE `tb_gastos`
-  ADD PRIMARY KEY (`codi_gastos`);
-
---
--- Indices de la tabla `tb_marcas`
---
-ALTER TABLE `tb_marcas`
-  ADD PRIMARY KEY (`id_marca`);
-
---
--- Indices de la tabla `tb_productos`
---
-ALTER TABLE `tb_productos`
-  ADD PRIMARY KEY (`id_producto`);
-
---
--- Indices de la tabla `tb_puntaje_cliente`
---
-ALTER TABLE `tb_puntaje_cliente`
-  ADD PRIMARY KEY (`codi_puntaje_cliente`);
-
---
--- Indices de la tabla `tb_puntos_posteo`
---
-ALTER TABLE `tb_puntos_posteo`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `tb_regi_cli`
---
-ALTER TABLE `tb_regi_cli`
-  ADD PRIMARY KEY (`codi_clie`);
-
---
--- Indices de la tabla `tb_regi_pers_cont`
---
-ALTER TABLE `tb_regi_pers_cont`
-  ADD PRIMARY KEY (`codi_cont`);
-
---
--- Indices de la tabla `tb_status_factura`
---
-ALTER TABLE `tb_status_factura`
-  ADD PRIMARY KEY (`codi_status`);
-
---
--- Indices de la tabla `tb_user_reg`
---
-ALTER TABLE `tb_user_reg`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT de las tablas volcadas
+-- Dumping events for database 'facturacion_milan'
 --
 
 --
--- AUTO_INCREMENT de la tabla `tb_caja`
+-- Dumping routines for database 'facturacion_milan'
 --
-ALTER TABLE `tb_caja`
-  MODIFY `id_caja` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
---
--- AUTO_INCREMENT de la tabla `tb_categorias_productos`
---
-ALTER TABLE `tb_categorias_productos`
-  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de la tabla `tb_categoria_puntaje`
---
-ALTER TABLE `tb_categoria_puntaje`
-  MODIFY `id_puntaje` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT de la tabla `tb_config`
---
-ALTER TABLE `tb_config`
-  MODIFY `id_config` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT de la tabla `tb_detalle_factura`
---
-ALTER TABLE `tb_detalle_factura`
-  MODIFY `codi_detalle` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
-
---
--- AUTO_INCREMENT de la tabla `tb_detalle_gastos`
---
-ALTER TABLE `tb_detalle_gastos`
-  MODIFY `codi_detalle_gastos` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `tb_detalle_puntos`
---
-ALTER TABLE `tb_detalle_puntos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
-
---
--- AUTO_INCREMENT de la tabla `tb_expediente`
---
-ALTER TABLE `tb_expediente`
-  MODIFY `codi_exp` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `tb_factura`
---
-ALTER TABLE `tb_factura`
-  MODIFY `codi_factu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT de la tabla `tb_gastos`
---
-ALTER TABLE `tb_gastos`
-  MODIFY `codi_gastos` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `tb_marcas`
---
-ALTER TABLE `tb_marcas`
-  MODIFY `id_marca` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- AUTO_INCREMENT de la tabla `tb_productos`
---
-ALTER TABLE `tb_productos`
-  MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT de la tabla `tb_puntaje_cliente`
---
-ALTER TABLE `tb_puntaje_cliente`
-  MODIFY `codi_puntaje_cliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT de la tabla `tb_puntos_posteo`
---
-ALTER TABLE `tb_puntos_posteo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT de la tabla `tb_regi_cli`
---
-ALTER TABLE `tb_regi_cli`
-  MODIFY `codi_clie` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT de la tabla `tb_regi_pers_cont`
---
-ALTER TABLE `tb_regi_pers_cont`
-  MODIFY `codi_cont` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de la tabla `tb_status_factura`
---
-ALTER TABLE `tb_status_factura`
-  MODIFY `codi_status` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT de la tabla `tb_user_reg`
---
-ALTER TABLE `tb_user_reg`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=303;
-COMMIT;
-
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-12-06  9:57:18
