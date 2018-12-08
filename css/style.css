@@ -418,6 +418,9 @@ width:50px;
 }
 
 
+select#sele_clie {
+width: 200px;
+}
 
 #cuerpo_calculo{
 height:560px;

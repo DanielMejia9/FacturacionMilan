@@ -24,7 +24,7 @@ $pdf = new FPDF('L','mm','A4');
 
 $pdf->AddPage();
 $pdf->SetFont('Arial', '', 10);
-$pdf->Image('../images/black-logo.png' , 10 ,8, 60 , 13,'PNG');
+$pdf->Image('../images/logo.png' , 10 ,8, 50 , 13,'PNG');
 $pdf->Cell(1, 10, '', 0);
 $pdf->Cell(240, 10, '', 0);
 $pdf->SetFont('Arial', '', 9);

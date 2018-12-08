@@ -25,7 +25,7 @@ $pdf->AddPage();
 $pdf->SetFont('Arial', '', 10);
 //$pdf->Image('../images/Jirehpro_logo.png' , 10 ,8, 50 , 25,'PNG');
 $pdf->Cell(1, 10, '', 0);
-$pdf->Cell(240, 10, 'Razon Social:Tecnologia Desarrollo Jirehpro,C.A.', 0);
+$pdf->Cell(240, 10, 'Milanbc.com.', 0);
 $pdf->SetFont('Arial', '', 12);
 $pdf->Cell(50, 10, 'Fecha: '.date('d-m-Y').'', 0);
 $pdf->Ln(15);

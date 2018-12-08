@@ -105,7 +105,7 @@ $atras = 1;
                     <li class=""><a href="javascript:history.go(-1);">Atras</a><span class="sr-only">(current)</span></a></li>
                     <li><a href="gastos.php">Cuenta de Gastos <span class="sr-only">(current)</span></a></li>
                     <li class="active"><a href="libro_de_gastos.php">Reporte de Gastos</a></li>
-                    <li><a href="estadistica_de_gastos.php">Estadística de Gastos</a></li>
+                    <!--li><a href="estadistica_de_gastos.php">Estadística de Gastos</a></li-->
                     
                   </ul>
             </div>

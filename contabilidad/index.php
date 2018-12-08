@@ -18,14 +18,14 @@ $atras = 1;
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
 
 
 <!-- Optional theme -->
-<link rel="stylesheet" href="../css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="../jscript/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="../jscript/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="../css/style.css"/>
 <link rel="shortcut icon" href="../favicon.ico"/>
@@ -66,12 +66,12 @@ $atras = 1;
                     <span style="color: #333333; font-weight:bold;font-size:14pt;padding: 0 0 0 10px;">Contabilidad </span>
                 </div>
                 <div class="row placeholders" >
-                    <div class="col-xs-6 col-sm-2" >
+                    <!--div class="col-xs-6 col-sm-2" >
                         <div class="ico_acceso">
                             <a href="libro_de_ventas.php"><img src="../images/ico-compras.png" border="0" width="128" /></a>
                             <div>Libro de Compras</div>
                         </div>
-                    </div>
+                    </div-->
                     <div class="col-xs-6 col-sm-2" >
                         <div class="ico_acceso">
                             <a href="libro_de_ventas.php"><img src="../images/ico-ventas.png" border="0" width="128" /></a>
@@ -90,12 +90,12 @@ $atras = 1;
                             <div>Ganancias y Pérdida</div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-sm-2">
+                    <!--div class="col-xs-6 col-sm-2">
                         <div class="ico_acceso">
                             <a href="flujo_de_caja.php"><img src="../images/ico-caja.png" border="0" width="128" />
                             <div>Flujo de Caja</div>
                         </div>
-                    </div>
+                    </div-->
                     <!--<div class="col-xs-6 col-sm-2">
                         <div class="ico_acceso">
                             <a href="facturacion/facturacion.php?valor=0"><img src="images/ico-fact.png" border="0" width="128" /></a>

@@ -11,7 +11,7 @@ $hasta = date('Y-m-d', strtotime($_GET["hasta"]));
 
 if($desde !='' && $hasta !='')
 {
-    $sql ="select sum(A.monto_neto) as monto_neto, sum(A.monto_iva) as monto_iva, sum(A.monto_total) as monto_total  from tb_gastos as A inner join tb_detalle_gastos as B on A.codi_gastos = B.codi_gastos  where fech_emis between '$desde' and '$hasta'";
+    $sql ="select sum(monto_neto) as monto_neto, sum(monto_iva) as monto_iva, sum(monto_total) as monto_total  from tb_gastos  where fech_emis between '$desde' and '$hasta'";
 }
 
 /*if($desde !='' && $hasta !='' && $cliente !='')
@@ -29,7 +29,7 @@ $pdf->AddPage();
 $pdf->SetFont('Arial', '', 10);
 //$pdf->Image('../images/Jirehpro_logo.png' , 10 ,8, 50 , 25,'PNG');
 $pdf->Cell(1, 10, '', 0);
-$pdf->Cell(240, 10, 'Razon Social:Tecnologia Desarrollo Jirehpro,C.A.', 0);
+$pdf->Cell(240, 10, 'Milanbc.com.', 0);
 $pdf->SetFont('Arial', '', 9);
 $pdf->Cell(50, 10, 'Fecha: '.date('d-m-Y').'', 0);
 $pdf->Ln(15);
@@ -60,8 +60,8 @@ while($productos2 = mysql_fetch_array($productos)){
 	$monto_n  = $monto_n + $productos2['monto_neto'];
 	$monto_i   = $monto_i  + $productos2['monto_iva'];
     $monto_t = $monto_t + $productos2['monto_total'];
-    
-	
+
+
     $pdf->Cell(20, 8, date('d-m-Y', strtotime($mdesde)), 0);
 	$pdf->Cell(140, 8, 'Gastos General', 0);
 	$pdf->Cell(44, 8, number_format($productos2['monto_neto'],2,',','.'), 0);
