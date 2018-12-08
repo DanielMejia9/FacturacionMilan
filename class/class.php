@@ -6,8 +6,8 @@ class Conectar
     {
         //Hacemos la conexion a la BD e ingresamos el nombre de servidor
         //el usuario  y su clave
-        //$con = mysql_connect("localhost", "factura_user", "Tsa5h34?");
-        $con = mysql_connect("localhost", "root", "");
+        $con = mysql_connect("localhost", "factura_user", "Tsa5h34?");
+        //$con = mysql_connect("localhost", "root", "");
         //Le deciamos que tipo de cotejamiento será utilizado
         mysql_query("SET NAMES 'utf8'");
         //nos conectamos a la BD
