@@ -65,6 +65,18 @@ class Cliente
         return $this->datos;
     }
 
+    //Llama a los cliente por el codi_clie
+    public function ListarEmpleados($id)
+    {
+        $sql = "SELECT * FROM tb_empleados WHERE id = $id";
+        $res = mysql_query($sql, Conectar::conecta());
+        while ($reg = mysql_fetch_assoc($res))
+        {
+            $this->datos[] = $reg;
+        }
+        return $this->datos;
+    }
+
     //Consultamos los puntos acumulados del cliente
     public function ConsultaPuntos($codiClie)
     {
@@ -157,6 +169,21 @@ class Cliente
 
     }
 
+    //Editamos el Empleados
+    public function EditarEmpleado($id, $cedula, $nombre, $apellido, $fecha, $direccion, $telefono_p, $telefono_s, $email, $cargo)
+    {
+        $fecha_nacimiento = date("Y-m-d", strtotime($fecha));
+
+        $sql = "UPDATE tb_empleados SET cedula = '$cedula', nombre = '$nombre', apellido = '$apellido', fecha_nacimiento ='$fecha_nacimiento', direccion = '$direccion', telefono_principal = '$telefono_p', telefono_secundario = '$telefono_s', email = '$email', cargo_ocupacion = '$cargo' WHERE id = '$id'";
+
+        $reg = mysql_query($sql, Conectar::conecta());
+        echo "<script type='text/javascript'>
+            alert('El registro ha sido modificado satisfactoriamente');
+            window.location='modificar_empleado.php?id=$id';
+            </script>";
+
+    }
+
     //Registramos los Clientes
     public function AnadirCliente($cedula, $nom_cliente, $ape_cliente, $fecha, $dire, $tele, $telepc, $email, $clave)
     {
@@ -168,10 +195,37 @@ class Cliente
 			alert('El registro ha sido añadido satisfactoriamente');
 			window.location='add_cliente.php';
 			</script>";
-
-
     }
 
+    //Registramos los Clientes
+    public function AnadirEmpleado($cedula, $nombre, $apellido, $fecha, $direccion, $telep, $teles, $email, $cargo)
+    {
+        $con = mysqli_connect("localhost", "factura_user", "Tsa5h34?","facturacion_milan");
+        //$con = mysqli_connect("localhost", "root", "","facturacion_milan");
+
+        $fecha_nacimiento = date("Y-m-d", strtotime($fecha));
+        $sql = mysqli_query($con, "INSERT INTO tb_empleados (cedula, nombre, apellido, fecha_nacimiento, direccion, telefono_principal, telefono_secundario, email, cargo_ocupacion) VALUES ('$cedula','$nombre','$apellido','$fecha_nacimiento','$direccion','$telep','$teles','$email','$cargo')");
+        
+        echo "<script type='text/javascript'>
+            alert('El registro ha sido añadido satisfactoriamente');
+            window.location='add_empleado.php';
+            </script>";
+    }
+
+    //Paginado Utilizado primeramente para los empleados
+    public function PaginadoEmpleado($inicio)
+    {
+        $sql = "select * from tb_empleados order by id desc limit $inicio, 10";
+        //$sql = "select * from tb_regi_cli";
+        //echo $sql;
+        $res = mysql_query($sql, Conectar::conecta());
+        while ($reg = mysql_fetch_assoc($res))
+        {
+            $this->datos[] = $reg;
+
+        }
+        return $this->datos;
+    }
 
     //Paginado Utilizado primeramente para los CLiente
     public function PaginadoCliente($inicio)
@@ -203,11 +257,24 @@ class Cliente
         return $this->datos;
     }
 
+    //Muestra la tabla con todos los empleados registrados
+    public function MostrarEmpleadoTabla()
+    {
+        $sql = "select * from tb_empleados";
+        $res = mysql_query($sql, Conectar::conecta());
+
+        while ($reg = mysql_fetch_assoc($res))
+        {
+            $this->datos[] = $reg;
+        }
+
+        return $this->datos;
+    }
+
 
     //Registramos los Clientes
     public function AnadirCategoria($nom, $status, $fecha)
     {
-
         $sql = "insert into tb_categorias_productos values (null,'$nom','$status','$fecha')";
         //en este caso  como el codi_clie de la BD es PRIMARY
         $reg = mysql_query($sql, Conectar::conecta());
@@ -215,8 +282,19 @@ class Cliente
             alert('El registro satisfactorio');
             window.location='add_categoria.php';
             </script>";
+    }
 
-
+     //Registramos las marcas
+    public function AnadirMarca($descripcion)
+    {
+        //$con = mysqli_connect("localhost", "root", "","facturacion_milan");
+        $con = mysqli_connect("localhost", "factura_user", "Tsa5h34?","facturacion_milan");
+        $sql = mysqli_query($con, "INSERT INTO tb_marcas (descripcion_marca) VALUES ('$descripcion')");
+        //en este caso  como el codi_clie de la BD es PRIMARY
+        echo "<script type='text/javascript'>
+            alert('El registro satisfactorio');
+            window.location='add_marca.php';
+            </script>";
     }
 
     //Paginado Utilizado primeramente para los Categoria
@@ -234,11 +312,40 @@ class Cliente
         return $this->datos;
     }
 
+    //Paginado Utilizado primeramente para los Categoria
+    public function PaginadoMarca($inicio)
+    {
+        $sql = "select * from tb_marcas order by id_marca desc limit $inicio, 10";
+        //$sql = "select * from tb_regi_cli";
+        //echo $sql;
+        $res = mysql_query($sql, Conectar::conecta());
+        while ($reg = mysql_fetch_assoc($res))
+        {
+            $this->datos[] = $reg;
+
+        }
+        return $this->datos;
+    }
+
 
     //Muestra la tabla con todos los clientes registrados
     public function MostrarCategoriaTabla()
     {
         $sql = "select * from tb_categorias_productos";
+        $res = mysql_query($sql, Conectar::conecta());
+
+        while ($reg = mysql_fetch_assoc($res))
+        {
+            $this->datos[] = $reg;
+        }
+
+        return $this->datos;
+    }
+
+    //Muestra la tabla con todos los clientes registrados
+    public function MostrarMarcaTabla()
+    {
+        $sql = "select * from tb_marcas";
         $res = mysql_query($sql, Conectar::conecta());
 
         while ($reg = mysql_fetch_assoc($res))
@@ -420,6 +527,18 @@ Class Productos
             return $this->datos;
     }
 
+    public function ListarMarca($id)
+    {
+        $sql = "select * from tb_marcas where id_marca = $id";
+        $res = mysql_query($sql,Conectar::conecta());
+        while($reg = mysql_fetch_assoc($res))
+        {
+            $this->datos[] = $reg;
+        }
+        
+        return $this->datos;
+    }
+
     public function mostrarCategoria()
     {
         $sql = "select * from tb_categorias_productos";
@@ -442,6 +561,20 @@ Class Productos
         echo "<script type='text/javascript'>
             alert('El registro ha sido modificado satisfactoriamente');
             window.location='../productos/modificar_categoria.php?id=$id';
+            </script>";
+
+    }
+
+    //Editamos el Categoria que deseamos actualizar
+    public function EditarMarca($id, $descripcion)
+    {
+        //echo $codigo,$nom,$rif,$nit,$fecha,$dire,$pais,$cuidad,$estado,$tele,$telepc,$cont;
+        $sql = "UPDATE tb_marcas SET descripcion_marca = '$descripcion' WHERE id_marca = '$id'";
+
+        $reg = mysql_query($sql, Conectar::conecta());
+        echo "<script type='text/javascript'>
+            alert('El registro ha sido modificado satisfactoriamente');
+            window.location='../productos/modificar_marca.php?id=$id';
             </script>";
 
     }
